@@ -1,0 +1,93 @@
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 110%;
+    height:100%;
+}
+
+header{
+  display: block;
+}
+
+.titolobar{
+    display: flex;
+    justify-content: flex-start;
+		margin-bottom: 10px;
+    padding-left: 0px !important;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+    display: flex;
+		justify-content: flex-start;
+    border-radius: 0px 15px 15px 15px;
+}
+.titolo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.barranav{
+    background-color: #00A2FF;
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 10% 0px 10%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.barranav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px
+}
+.barranav a:hover{
+    background-color: #0051FF;
+    color: white;
+    border-radius: 10px
+}
+.barranav a.active{
+    background-color: #4CAF50;
+    color: white
+}
+
+body{
+  padding: 0 10px 100px 10px;
+  position:relative; 
+  width: 100%; 
+  height: auto !important;
+  height: 100%;
+  min-height:100%;
+  margin:0 auto;
+  background: linear-gradient(135deg, #D0D0D0, #689acd)
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end ;
+  background-color: grey;
+  left: 0;
+  clear:both;
+  bottom:0;
+  height:auto;
+  position:absolute;
+  width:100%;
+  text-align:center;
+  font-size: 90%
+}
+
+.barranav a:hover{
+    transition: navhovered 1s ease-in;
+}
+
+@keyframes navhovered {
+  from {background-color: #00A2FF}
+  to {background-color: #0051FF;}
+}

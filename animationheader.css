@@ -1,0 +1,9 @@
+.barranav a:hover{
+    animation-name: navhovered;
+    animation-duration: 1s;
+}
+
+@keyframes navhovered {
+  from {backgrround-color: #00A2FF}
+  to {background-color: #0051FF;}
+}
