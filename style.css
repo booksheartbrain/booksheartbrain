@@ -4,6 +4,14 @@ html{
     height:100%;
 }
 
+body a {
+  color: rgb(0, 2, 124)
+}
+
+body a:hover {
+  color: #fff
+}
+
 header{
   display: block;
 }
@@ -72,7 +80,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: flex-end ;
-  background-color: grey;
+  background-color: lightgrey;
   left: 0;
   clear:both;
   bottom:0;
@@ -90,4 +98,8 @@ footer{
 @keyframes navhovered {
   from {background-color: #00A2FF}
   to {background-color: #0051FF;}
+}
+
+.nodisplay {
+  display: none;
 }
