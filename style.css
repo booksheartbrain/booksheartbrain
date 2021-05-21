@@ -9,10 +9,10 @@ body a {
 }
 
 body a:hover {
-  color: #fff
+  color: rgb(4, 0, 250)
 }
 
-header{
+#header{
   display: block;
 }
 
@@ -37,7 +37,7 @@ header{
 }
 
 .barranav{
-    background-color: #00A2FF;
+    background: linear-gradient(90deg, #00A2FF, #008ee0);
     overflow: hidden;
     z-index: 1000;
     display: flex;
