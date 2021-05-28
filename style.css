@@ -4,6 +4,10 @@ html{
     height:100%;
 }
 
+p {
+  font-size: large
+}
+
 body a {
   color: rgb(0, 2, 124)
 }
@@ -30,6 +34,7 @@ body a:hover {
 		justify-content: flex-start;
     border-radius: 0px 15px 15px 15px;
 }
+
 .titolo{
     display: flex;
     justify-content: flex-start;
@@ -92,13 +97,17 @@ footer{
 }
 
 .barranav a:hover{
-    transition: navhovered 1s ease-in;
+  animation-name: navhovered;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
 }
 
 @keyframes navhovered {
-  from {background-color: #00A2FF}
-  to {background-color: #0051FF;}
+  0% {background-color: #00A2FF}
+  20% {background-color: #3dd8ff}
+  100% {background-color: #0051FF;}
 }
+
 
 .nodisplay {
   display: none;
