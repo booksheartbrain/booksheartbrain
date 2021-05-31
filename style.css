@@ -120,35 +120,36 @@ table {
   border-color: black;
 }
 
-.listalibri {
+li {
   list-style-type: none;
 }
 
-.libritable {
-  padding-bottom: 20px;
-}
-
-.infolibro {
-  display:flex;
-}
-
-.nomelibro {
-  display:flex;
-}
-
-.autorelibro {
-  display:flex;
-}
-
-.testolibro {
-  display:flex;
-}
-
-.displayblock {
-  display: block;
-}
 
 .immlibro {
   width: 140px;
   height: 140px;
+  float:left;
+  border-radius: 15px 15px 15px 15px;
+  margin-right: 2%
+}
+
+.listalibri {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.infolibro {
+
+}
+
+
+
+.librosin {
+  float: left;
+  margin-right: 7%;
+}
+
+.testolibro {
+  min-width: 50%;
+  margin-right: 7%
 }
