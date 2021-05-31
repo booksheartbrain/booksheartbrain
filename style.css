@@ -128,11 +128,6 @@ table {
   padding-bottom: 20px;
 }
 
-.immlibro {
-  width: 140px;
-  height: 140px;
-}
-
 .infolibro {
   display:flex;
 }
@@ -151,4 +146,9 @@ table {
 
 .displayblock {
   display: block;
+}
+
+.immlibro {
+  width: 140px;
+  height: 140px;
 }
