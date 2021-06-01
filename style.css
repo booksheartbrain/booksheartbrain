@@ -78,7 +78,7 @@ body{
   height: 100%;
   min-height:100%;
   margin:0 auto;
-  background: linear-gradient(135deg, #D0D0D0, #689acd)
+  background: #8bb8e6
 }
 
 footer{
@@ -137,12 +137,6 @@ li {
   display: flex;
   margin-bottom: 10px;
 }
-
-.infolibro {
-
-}
-
-
 
 .librosin {
   float: left;
