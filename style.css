@@ -1,7 +1,13 @@
+@font-face {
+  font-family: 'Optima Medium';
+  src: url('/assets/fonts/optima/Optima\ Medium.woff') format('truetype');;
+}
+
 html{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:"Optima Medium",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 110%;
   height:100%;
+  
 }
 
 p {
@@ -71,14 +77,14 @@ display: block;
 }
 
 body{
-padding: 0 10px 100px 10px;
-position:relative; 
-width: 100%; 
-height: auto !important;
-height: 100%;
-min-height:100%;
-margin:0 auto;
-background-color: #8bb8e6
+  padding: 0 10px 100px 10px;
+  position:relative; 
+  width: 100%; 
+  height: auto !important;
+  height: 100%;
+  min-height:100%;
+  margin:0 auto;
+  background-color:#8bb8e6
 }
 
 footer{
