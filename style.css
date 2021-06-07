@@ -3,15 +3,16 @@
   src: url('/assets/fonts/optima/Optima\ Medium.woff') format('truetype');;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@font-face {
+  font-family: 'Exo';
+  src: url('/assets/fonts/exo/Exo-Regular.ttf') format('truetype');;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 html{
   font-family:'Exo','Ubuntu','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 110%;
   height:100%;
-  
 }
 
 p {
