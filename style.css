@@ -115,22 +115,13 @@ animation-timing-function: ease-out;
 	100% {background-color: #0051FF;}
 }
 
-
 .nodisplay {
 	display: none;
-}
-
-table {
-	margin-left: 10%;
-	margin-right: 10%;
-	width: 80%;
-	border-color: black;
 }
 
 .listalibri {
 	list-style-type: none;
 }
-
 
 .immlibro {
 	width: 140px;
