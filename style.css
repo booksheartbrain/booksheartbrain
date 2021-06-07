@@ -1,9 +1,4 @@
 @font-face {
-  font-family: 'Optima Medium';
-  src: url('/assets/fonts/optima/Optima\ Medium.woff') format('truetype');;
-}
-
-@font-face {
   font-family: 'Exo';
   src: url('/assets/fonts/exo/Exo-Regular.ttf') format('truetype');;
 }
@@ -16,20 +11,20 @@ html{
 }
 
 p {
-font-size: large;
-line-height: 1.6;
+  font-size:large;
+  line-height: 1.6;
 }
 
 body a {
-color: rgb(0, 2, 124)
+  color: rgb(0, 2, 124)
 }
 
 body a:hover {
-color: rgb(4, 0, 250)
+  color: rgb(4, 0, 250)
 }
 
 #header{
-display: block;
+  display: block;
 }
 
 .titolobar{
@@ -78,34 +73,34 @@ display: block;
   border-radius: 10px
 }
 .barranav a.active{
-  background-color: #4CAF50;
-  color: white
+	background-color: #4CAF50;
+	color: white
 }
 
 body{
-  padding: 0 10px 100px 10px;
-  position:relative; 
-  width: 100%; 
-  height: auto !important;
-  height: 100%;
-  min-height:100%;
-  margin:0 auto;
-  background-color:#8bb8e6
+	padding: 0 10px 100px 10px;
+	position:relative; 
+	width: 100%; 
+	height: auto !important;
+	height: 100%;
+	min-height:100%;
+	margin:0 auto;
+	background-color:#8bb8e6
 }
 
 footer{
-display: flex;
-justify-content: center;
-align-items: flex-end ;
-background-color: lightgrey;
-left: 0;
-clear:both;
-bottom:0;
-height:auto;
-position:absolute;
-width:100%;
-text-align:center;
-font-size: 90%
+	display: flex;
+	justify-content: center;
+	align-items: flex-end ;
+	background-color: lightgrey;
+	left: 0;
+	clear:both;
+	bottom:0;
+	height:auto;
+	position:absolute;
+	width:100%;
+	text-align:center;
+	font-size: 90%
 }
 
 .barranav a:hover{
@@ -115,47 +110,47 @@ animation-timing-function: ease-out;
 }
 
 @keyframes navhovered {
-0% {background-color: #00A2FF}
-20% {background-color: #3dd8ff}
-100% {background-color: #0051FF;}
+	0% {background-color: #00A2FF}
+	20% {background-color: #3dd8ff}
+	100% {background-color: #0051FF;}
 }
 
 
 .nodisplay {
-display: none;
+	display: none;
 }
 
 table {
-margin-left: 10%;
-margin-right: 10%;
-width: 80%;
-border-color: black;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	border-color: black;
 }
 
-li {
-list-style-type: none;
+.listalibri {
+	list-style-type: none;
 }
 
 
 .immlibro {
-width: 140px;
-height: 140px;
-float:left;
-border-radius: 15px 15px 15px 15px;
-margin-right: 2%
+	width: 140px;
+	height: 140px;
+	float:left;
+	border-radius: 15px 15px 15px 15px;
+	margin-right: 2%
 }
 
 .listalibri {
-display: flex;
-margin-bottom: 10px;
+	display: flex;
+	margin-bottom: 10px;
 }
 
 .librosin {
-float: left;
-margin-right: 7%;
+	float: left;
+	margin-right: 7%;
 }
 
 .testolibro {
-min-width: 50%;
-margin-right: 7%
+	min-width: 50%;
+	margin-right: 7%
 }
