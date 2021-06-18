@@ -92,6 +92,9 @@ body a:hover {
   align-items: center
 }
 
+
+
+
 .barranav a:hover{
   background-color: #0051FF;
   color: white;
@@ -103,16 +106,14 @@ body a:hover {
 }
 
 body{
-	padding: 0 10px 30px 10px;
+	padding: 0 10px 40px 10px;
 	position:relative; 
-	width: 98%;
+	width: 100%;
 	height: auto !important;
 	height: 100%;
 	min-height:100%;
 	margin:0 auto;
 	background-color:#8bb8e6;
-  overflow:scroll;
-  overflow-x: auto;
 }
 
 footer{
