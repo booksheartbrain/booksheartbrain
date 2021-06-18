@@ -3,10 +3,54 @@
   src: url('/assets/fonts/exo/Exo-Regular.ttf') format('truetype');;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@media screen and (min-width: 768px) {
+  
+.barranav{
+  background: linear-gradient(90deg, #00A2FF, #008ee0);
+  overflow: hidden;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 10% 0px 10%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.barranav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px
+}
+}
+  
+@media screen and (max-width: 768px) {
+  /*Parte per dispositivi più piccoli*/
+  .barranav{
+  background: linear-gradient(90deg, #00A2FF, #008ee0);
+  overflow:auto;
+  z-index: 1000;
+  display: flex;
+  flex-flow:column wrap;
+  margin: 0px 10% 0px 10%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+
+.barranav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+}
 
 html{
-  font-family:'Exo','Ubuntu','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Exo',"Ubuntu",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height:100%;
 }
 
@@ -48,25 +92,6 @@ body a:hover {
   align-items: center
 }
 
-.barranav{
-  background: linear-gradient(90deg, #00A2FF, #008ee0);
-  overflow: hidden;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0px 10% 0px 10%;
-  margin-bottom: 15px;
-  border-radius: 10px;
-}
-
-.barranav a{
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px
-}
 .barranav a:hover{
   background-color: #0051FF;
   color: white;
@@ -78,14 +103,16 @@ body a:hover {
 }
 
 body{
-	padding: 0 10px 100px 10px;
+	padding: 0 10px 30px 10px;
 	position:relative; 
-	width: 100%; 
+	width: 98%;
 	height: auto !important;
 	height: 100%;
 	min-height:100%;
 	margin:0 auto;
-	background-color:#8bb8e6
+	background-color:#8bb8e6;
+  overflow:scroll;
+  overflow-x: auto;
 }
 
 footer{
