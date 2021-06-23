@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Exo';
+    src: url('/assets/fonts/exo/Exo-Regular.ttf') format('truetype');;
+  }
+
+* {
+    font-family: "Exo", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

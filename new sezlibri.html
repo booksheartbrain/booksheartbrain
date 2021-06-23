@@ -13,12 +13,50 @@
 		$("#footer").load("/footer.html"); 
 		});
 	</script>
+	<link rel="stylesheet" href="/newstyle.css">
 	<link rel="stylesheet" href="/bulma.css">
+	<script src="/bulma-js.js"></script>
 	<meta charset="UTF-8">
 	<title>Sezione libri - Books, heart and brain</title>
 </head>
 <header>
-	<div id="header"></div>
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+		  <a class="my-logo" href="/index.html">
+			<img alt="logo del gruppo" src="/assets/logo-completo.png" onmouseover="this.src='/assets/gif-logo.gif'" onmouseout="this.src='/assets/logo-completo.png'" width="" height="">
+		  </a>
+	  
+		  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+	
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		  </a>
+		</div>
+		
+		<div class="navbar-menu" id="navMenu">
+		  <div class="navbar-end box">
+			<a href="#" class="navbar-item">
+				Home
+			</a>
+	  
+			<a href="#" class="navbar-item">
+				Partecipa
+			</a>
+	
+			<a href="#" class="navbar-item">
+				<i class="fas fa-film" aria-hidden="true"></i>
+				Ciak si legge
+			</a>
+	
+			<a href="#" class="navbar-item">
+				<i class="fas fa-book" aria-hidden="true"></i>
+				Libri consigliati
+			</a>
+	
+		  </div>
+		</div>
+		  </nav>
 </header>
 <body>
 	<div class="card">
@@ -30,17 +68,15 @@
 			  </figure>
 			</div>
 			<div class="media-content">
-			  <p class="title is-4">John Smith</p>
-			  <p class="subtitle is-6">@johnsmith</p>
+			  <p class="title is-4">Titolo del libro</p>
+			  <p class="subtitle is-6">di Nome Autore</p>
 			</div>
 		  </div>
 	  
 		  <div class="content">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-			<a href="#">#css</a> <a href="#">#responsive</a>
+			risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget dolor morbi non arcu risus quis varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse
 			<br>
-			<time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+			<time datetime="AAAA-MM-GG">Scritta il GG MMM AAAA</time>
 		  </div>
 		</div>
 	  </div>
