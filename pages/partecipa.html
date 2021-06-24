@@ -2,48 +2,76 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="/assets/booksheartandbrain.ico" />
-	<script
-		src="https://code.jquery.com/jquery-3.3.1.js"
-		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-		crossorigin="anonymous">
-	</script>
-	<script>
-		$(function(){
-		$("#header").load("/header.html"); 
-		$("#footer").load("/footer.html"); 
-		});
-	</script>
-	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="/newstyle.css">
+	<link rel="stylesheet" href="/bulma.css">
+	<script src="/bulma-js.js"></script>
 	<meta charset="UTF-8">
 	<title>Partecipa - Books, heart and brain</title>
 </head>
-<header>
-	<div id="header">
-	</div>
+<header class="py-3">
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a class="my-logo" href="/index.html">
+				<img alt="logo del gruppo" src="/assets/logo-completo.png" onmouseover="this.src='/assets/gif-logo.gif'" onmouseout="this.src='/assets/logo-completo.png'" width="" height="">
+			</a>
+		  
+			<a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+			
+		<div class="navbar-menu" id="navMenu">
+			<div class="navbar-end box">
+				<a href="/index.html" class="navbar-item">
+					Home
+				</a>
+		  
+				<a href="#" class="navbar-item">
+					Partecipa
+				</a>
+		
+				<a href="/pages/ciaksilegge.html" class="navbar-item">
+					Ciak si legge
+				</a>
+		
+				<a href="/pages/libri/consigli.html" class="navbar-item">
+					<i class="fas fa-book" aria-hidden="true"></i>
+					Libri consigliati
+				</a>
+		
+			</div>
+		</div>
+	</nav>
 </header>
-<body>
-	<h2>Vuoi partecipare al gruppo di lettura?</h2>
-	<p>Il gruppo si ritrova il pomeriggio dell'ultimo venerdì del mese, al momento, nella sala polivalente. La partecipazione è gratuita.</p>
-	<p>Il protocollo per poter partecipare agli incontri in presenza è a <a href="https://www.comune.vigonovo.ve.it/s3/uploads/ckeditor/attachments/1/1/1/0/6/6/protocollo_covid_GL.pdf" target="_blank">questo link</a> </p>
+<body class="px-6 is-size-5">
+	<h2 class="is-size-2">Vuoi partecipare al gruppo di lettura?</h2>
+	<div class="is-size-5">Il gruppo si ritrova il pomeriggio dell'ultimo venerdì del mese, al momento, nella sala polivalente. La partecipazione è gratuita.</div>
+	<div class="block is-size-5">Il protocollo per poter partecipare agli incontri in presenza è a <a href="https://www.comune.vigonovo.ve.it/s3/uploads/ckeditor/attachments/1/1/1/0/6/6/protocollo_covid_GL.pdf" target="_blank">questo link</a> </div>
 		<ul>
-			<li>
-				<h3>Se hai discord:</h3>
-				<p>Entra nel server <a target="_blank" href="https://discord.gg/JJguV2FyTr" >cliccando qui</a></p>
+			
+			<li class="list-item">
+				<h3 class="is-size-4">Se hai discord:</h3>
+				<p class="is-size-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entra nel server <a target="_blank" href="https://discord.gg/JJguV2FyTr" >cliccando qui</a></p>
 			</li>
 			<li>
-				<h3>Se invece hai solo whatsapp:</h3>
-				<p>Entra nel gruppo <a target="_blank" href="https://chat.whatsapp.com/Dmj1oGZ1DIO4lRE6gtnoq2">cliccando qui</a></p>
+				<h3 class="is-size-4">Se invece hai solo whatsapp:</h3>
+				<p class="is-size-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entra nel gruppo <a target="_blank" href="https://chat.whatsapp.com/Dmj1oGZ1DIO4lRE6gtnoq2">cliccando qui</a></p>
 			</li>
 			<li>
-				<h3>Se invece non puoi fare niente di tutto questo:</h3>
+				<h3 class="is-size-4">Se invece non puoi fare niente di tutto questo:</h3>
 				<ul>
-					<li>Vai in biblioteca e chiedi alla bibliotecaria</li>
-					<li>Manda una mail a <a href="mailto:biblioteca@comune.vigonovo.ve.it" target="_blank">biblioteca@comune.vigonovo.ve.it</a></li>
-					<li>Chiama il <a href="tel: 0499834927">0499834927</a></li>
+					<li><p class="is-size-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vai in biblioteca e chiedi alla bibliotecaria</p></li>
+					<li<p class="is-size-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manda una mail a <a href="mailto:biblioteca@comune.vigonovo.ve.it" target="_blank">biblioteca@comune.vigonovo.ve.it</a></p></li>
+					<li><p class="is-size-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chiama il <a href="tel: 0499834927">0499834927</a></p></li>
 				</ul>
 			</li>
 		</ul>
 </body>
-<footer>
-	<div id="footer"></div>
+
+<footer class="footer is-fixed-bottom">
+	<div class="content has-text-centered">
+	  <p><strong>By Giacomo R.</strong></p>
+	</div>
 </footer>

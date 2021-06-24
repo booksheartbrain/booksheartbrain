@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Exo';
+  src: url('/assets/fonts/exo/Exo-Regular.ttf') format('truetype');;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+html{
+  font-family:'Exo','Ubuntu','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height:100%;
+}
+
+p {
+  font-size:large;
+  line-height: 1.6;
+}
+
+body a {
+  color: rgb(0, 2, 124)
+}
+
+body a:hover {
+  color: rgb(4, 0, 250)
+}
+
+#header{
+  display: block;
+}
+
+.titolobar{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding-left: 0px !important;
+}
+
+.logo{
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 0px 15px 15px 15px;
+}
+
+.titolo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center
+}
+
+.barranav{
+  background: linear-gradient(90deg, #00A2FF, #008ee0);
+  overflow: hidden;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 10% 0px 10%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.barranav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px
+}
+.barranav a:hover{
+  background-color: #0051FF;
+  color: white;
+  border-radius: 10px
+}
+.barranav a.active{
+	background-color: #4CAF50;
+	color: white
+}
+
+body{
+	padding: 0 10px 100px 10px;
+	position:relative; 
+	width: 100%; 
+	height: auto !important;
+	height: 100%;
+	min-height:100%;
+	margin:0 auto;
+	background-color:#8bb8e6
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end ;
+	background-color: lightgrey;
+	left: 0;
+	clear:both;
+	bottom:0;
+	height:auto;
+	position:absolute;
+	width:100%;
+	text-align:center;
+	font-size: 90%
+}
+
+.barranav a:hover{
+animation-name: navhovered;
+animation-duration: 0.3s;
+animation-timing-function: ease-out;
+}
+
+@keyframes navhovered {
+	0% {background-color: #00A2FF}
+	20% {background-color: #3dd8ff}
+	100% {background-color: #0051FF;}
+}
+
+.nodisplay {
+	display: none;
+}
+
+.listalibri {
+	list-style-type: none;
+}
+
+.immlibro {
+	width: 140px;
+	height: 140px;
+	float:left;
+	border-radius: 15px 15px 15px 15px;
+	margin-right: 2%
+}
+
+.listalibri {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.librosin {
+	float: left;
+	margin-right: 7%;
+}
+
+.testolibro {
+	min-width: 50%;
+	margin-right: 7%
+}
