@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+
+User-agent: *
+Disallow: /cestino-provvisorio
+
+Sitemap: http://booksheartbrain.netlify.app/sitemap.xml
