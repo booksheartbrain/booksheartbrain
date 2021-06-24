@@ -2,31 +2,57 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="/assets/booksheartandbrain.ico" />
-	<script
-		src="https://code.jquery.com/jquery-3.3.1.js"
-		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-		crossorigin="anonymous">
-	</script>
-	<script>
-		$(function(){
-		$("#header").load("/header.html"); 
-		$("#footer").load("/footer.html"); 
-		});
-	</script>
-	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="/newstyle.css">
+	<link rel="stylesheet" href="/bulma.css">
+	<script src="/bulma-js.js"></script>
 	<meta charset="UTF-8">
 	<title>Ciak si legge - Books, heart and brain</title>
 </head>
-<header>
-	<div id="header">
+<header class="py-3">
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+		  <a class="my-logo" href="/index.html">
+			<img alt="logo del gruppo" src="/assets/logo-completo.png" onmouseover="this.src='/assets/gif-logo.gif'" onmouseout="this.src='/assets/logo-completo.png'" width="" height="">
+		  </a>
+	  
+		  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		  </a>
+		</div>
+		
+	<div class="navbar-menu" id="navMenu">
+		<div class="navbar-end box">
+			<a href="#" class="navbar-item">
+				Home
+			</a>
+	  
+			<a href="/pages/partecipa.html" class="navbar-item">
+				Partecipa
+			</a>
+	
+			<a href="/pages/ciaksilegge.html" class="navbar-item">
+				Ciak si legge
+			</a>
+	
+			<a href="/pages/libri/consigli.html" class="navbar-item">
+				<i class="fas fa-book" aria-hidden="true"></i>
+				Libri consigliati
+			</a>
+	
+		</div>
 	</div>
+	</nav>
 </header>
-<body>
-	<h2>Edizione 2021</h2>
+<body  class="px-6 is-size-5">
+	<h2 class="is-size-2">Edizione 2021</h2>
 	<p>Alcuni partecipanti del gruppo di lettura hanno partecipato a questa iniziativa (creata da Mare di Libri) in cui bisognava leggere un libro in anteprima e poi creare un booktrailer (un video in cui si riassume il libro)</p>
 	<p>Il video creato potrebbe essere pubblicato tra alcuni mesi</p>
 	<p>Per ulteriori informazioni su Ciak si Legge e per partecipare negli anni successivi <a target="_blank"href="https://maredilibri.it/il-festival/progetti/concorso-ciak-si-legge/">clicca qui</a></p>
 </body>
-<footer>
-	<div id="footer"></div>
+<footer class="footer">
+	<div class="content has-text-centered">
+	  <p><strong>By Giacomo R.</strong></p>
+	</div>
 </footer>
