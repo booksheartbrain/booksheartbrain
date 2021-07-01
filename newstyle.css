@@ -7,3 +7,56 @@
 * {
 	font-family: "Exo", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+/* contenitore base */
+.image-container {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+}
+ 
+/* immagine al interno del contenitore */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+ 
+/* contenitore con didascalia */
+.image-container .image-caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.74);
+    text-align: center;
+}
+ 
+/* titolo */
+.image-caption h2 {
+    margin-top: 50px;
+    color: #fffefe;
+    font-weight: 300;
+}
+ 
+/* descrizione dell'immagine  */
+.image-caption p {
+    color: #fff;
+}
+ 
+/* Tipi di animazioni apparizione didascalie */
+ 
+/* animazione da sinistra*/
+ 
+.image-container .caption-1 {
+    left: -260px;
+    transition: all 0.5s;
+}
+.image-container:hover .caption-1 {
+    left: 0;
+    transition: all 0.5s;
+}
