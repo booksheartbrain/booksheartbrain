@@ -9,6 +9,11 @@
 }
 
 
+.vectorial-image {
+    width: 250px;
+    height: 250px;
+}
+
 /* contenitore base */
 .image-container {
     width: 250px;
