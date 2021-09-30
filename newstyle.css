@@ -1,3 +1,5 @@
+@import url("hover.css");
+
 @font-face {
 	font-family: 'Exo';
 	src: url('/assets/fonts/exo/Exo-Regular.ttf') format('truetype');;
@@ -7,3 +9,113 @@
 * {
 	font-family: "Exo", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contenitore{
+    text-align: center;
+}
+.centrato{
+    display: inline-block;
+}
+
+
+.vectorial-image {
+    width: 250px;
+    height: 250px;
+}
+
+/* contenitore base */
+.image-container {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+}
+ 
+/* immagine al interno del contenitore */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+ 
+/* contenitore con didascalia */
+.image-container .image-caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.74);
+    text-align: center;
+}
+ 
+/* titolo */
+.image-caption h2 {
+    margin-top: 50px;
+    color: #fffefe;
+    font-weight: 300;
+}
+ 
+/* descrizione dell'immagine  */
+.image-caption p {
+    color: #fff;
+}
+ 
+/* Tipi di animazioni apparizione didascalie */
+ 
+/* animazione da sinistra*/
+ 
+.image-container .caption-1 {
+    left: -260px;
+    transition: all 0.5s;
+}
+.image-container:hover .caption-1 {
+    left: 0;
+    transition: all 0.5s;
+}
+
+/*Per dark mode*/
+/*
+body {
+    color: #222;
+    background: #fff;
+    font: 100% system-ui;
+  }
+  a {
+    color: #0033cc;
+  }
+  
+  
+@media (prefers-color-scheme: dark) {
+    .footer, html, body, header, div, .navbar-item, .navbar-link, .navbar-dropdown, p, div.box h2{
+      color: #eee;
+      background: #121212;
+    }
+
+    div.box, div.box p, div.box h2 {
+        background: #222;
+    }
+
+    div.image-caption.p {
+        background: none;
+    }
+
+    .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link, a.navbar-item:hover {
+        background-color: #c1c1c1;
+    }
+
+    nav {
+        color:#eee
+    }
+  
+    a {
+      color: #809fff;
+    }
+}
+
+*/

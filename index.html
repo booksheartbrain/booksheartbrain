@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="IT-it">
 <head>
-	<script data-goatcounter="https://booksheartbrain.goatcounter.com/count" async src="//gc.zgo.at/count.js" data-goatcounter-settings='{"allow_frame": true}'></script>
+	<meta charset="UTF-8">
 	<meta name="msvalidate.01" content="C0619279F3AE4771922DE80C7A525691" />
-	<meta lang="it">
+	<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Books, Heart and Brain",utcoffset:"2"}))};sessionStorage.setItem("_swa","1");</script>	<meta lang="IT-it">
 	<meta name="description" content="Il sito del gruppo di lettura dei ragazzi di Vigonovo (VE), 'Books, heart and brain'">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="/bulmathemes/bulma.css">
 	<link rel="stylesheet" href="/newstyle.css">
-	<link rel="stylesheet" href="/bulma.css">
 	<script src="/bulma-js.js"></script>
-	<meta charset="UTF-8">
 	<title>Books, heart and brain</title>
 	<link rel="shortcut icon" href="assets/booksheartandbrain.ico"/>
+	<!--<script>alert("Questo sito è ancora in costruzione. Il link al sito principale è booksheartbrain.netlify.app. Questo sito portebbe avere varie differenze di stile tra le pagine o delle pagine vuote, dato che le pagine minori non sono ancora state completemente riadattate")</script>-->
 </head>
 <header class="py-3">
 	<nav class="navbar" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
 		  <a class="my-logo" href="/index.html">
-			<img alt="logo del gruppo" src="/assets/logo-completo.png" onmouseover="this.src='/assets/gif-logo.gif'" onmouseout="this.src='/assets/logo-completo.png'" width="" height="">
+			<img alt="logo del gruppo" src="/assets/logo-completo.png" width="" height="">
 		  </a>
 	  
 		  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
@@ -27,27 +28,36 @@
 		  </a>
 		</div>
 		
-	<div class="navbar-menu" id="navMenu">
-		<div class="navbar-end box">
-			<a href="#" class="navbar-item">
-				Home
-			</a>
-	  
-			<a href="/pages/partecipa.html" class="navbar-item">
-				Partecipa
-			</a>
+		<div class="navbar-menu" id="navMenu">
+			<div class="navbar-end">
+				<a href="/index.html" class="navbar-item">
+					Home
+				</a>
+		  
+				<a href="/pages/partecipa.html" class="navbar-item">
+					Partecipa
+				</a>
 	
-			<a href="/pages/ciaksilegge.html" class="navbar-item">
-				Ciak si legge
-			</a>
-	
-			<a href="/pages/libri/consigli.html" class="navbar-item">
-				<i class="fas fa-book" aria-hidden="true"></i>
-				Libri consigliati
-			</a>
-	
+				<a href="/pages/eventi/eventi.html" class="navbar-item">
+					Eventi
+				</a>
+		
+				<a href="/pages/ciaksilegge.html" class="navbar-item">
+					Ciak si legge
+				</a>
+		
+				<div class="navbar-item has-dropdown is-hoverable" tabindex="0">
+					<a class="navbar-link">
+					  Libri
+					</a>
+					<div class="navbar-dropdown is-right">
+					  <a class="navbar-item" href="/pages/libri/letti.html" tabindex="0">Libri letti</a>
+					  <a class="navbar-item" href="/pages/libri/consigli.html" tabindex="0">Libri con bollino</a>
+					</div>
+				</div>
+		
+			</div>
 		</div>
-	</div>
 	</nav>
 </header>
 <body class="px-6 is-size-5">
@@ -56,9 +66,10 @@
 	<div class="block">Nato nel novembre del 2019, è un'attività educativa e ricreativa rivolta a ragazzi dai 10 ai 14 anni. <br> Condotto da un operatore della Biblioteca, nel gruppo vengono proposti e discussi libri di qualità per ragazzi. <br>Non si legge tutti lo stesso libro, ma ognuno sceglie, fra le proposte, quello che preferisce; si è liberi anche di non scegliere.</div>
 	<div class="block">Attualmente, l'attività adotta un protocollo di sicurezza per la prevenzione del contagio, ai sensi dell'allegato 8 del DPCM 24 ottobre 2020.</div>
 </body>
-<footer class="footer">
+<footer class="footer is-fixed-bottom">
 	<div class="content has-text-centered">
-	  <p><strong>By Giacomo R.</strong></p>
+	  <img src="/assets/undraw_book_lover_mkck.svg" alt="" class="vectorial-image is-centered">
+	  <p>By Giacomo R.</p>
 	</div>
 </footer>
 

@@ -4,6 +4,8 @@
 	<link rel="shortcut icon" href="/assets/booksheartandbrain.ico" />
 	<link rel="stylesheet" href="/newstyle.css">
 	<link rel="stylesheet" href="/bulma.css">
+	<link rel="stylesheet" href="/bulmathemes/bulma.css">
+
 	<script src="/bulma-js.js"></script>
 	<meta charset="UTF-8">
 	<title>Partecipa - Books, heart and brain</title>
@@ -23,23 +25,32 @@
 		</div>
 			
 		<div class="navbar-menu" id="navMenu">
-			<div class="navbar-end box">
+			<div class="navbar-end">
 				<a href="/index.html" class="navbar-item">
 					Home
 				</a>
 		  
-				<a href="#" class="navbar-item">
+				<a href="/pages/partecipa.html" class="navbar-item">
 					Partecipa
+				</a>
+	
+				<a href="/pages/eventi/eventi.html" class="navbar-item">
+					Eventi
 				</a>
 		
 				<a href="/pages/ciaksilegge.html" class="navbar-item">
 					Ciak si legge
 				</a>
 		
-				<a href="/pages/libri/consigli.html" class="navbar-item">
-					<i class="fas fa-book" aria-hidden="true"></i>
-					Libri consigliati
-				</a>
+				<div class="navbar-item has-dropdown is-hoverable" tabindex="0">
+					<a class="navbar-link">
+					  Libri
+					</a>
+					<div class="navbar-dropdown is-right">
+					  <a class="navbar-item" href="/pages/libri/letti.html" tabindex="0">Libri letti</a>
+					  <a class="navbar-item" href="/pages/libri/consigli.html" tabindex="0">Libri con bollino</a>
+					</div>
+				</div>
 		
 			</div>
 		</div>
@@ -63,7 +74,7 @@
 				<h3 class="is-size-4">Se invece non puoi fare niente di tutto questo:</h3>
 				<ul>
 					<li><p class="is-size-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vai in biblioteca e chiedi alla bibliotecaria</p></li>
-					<li<p class="is-size-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manda una mail a <a href="mailto:biblioteca@comune.vigonovo.ve.it" target="_blank">biblioteca@comune.vigonovo.ve.it</a></p></li>
+					<li<p class="is-size-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manda una mail a <a href="mailto:biblioteca@comune.vigonovo.ve.it" target="_blank">alla biblioteca</a>, oppure scrivi <a href="mailto:booksheartandbrain@gmail.com" target="_blank">alla nostra mail</a> </p></li>
 					<li><p class="is-size-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chiama il <a href="tel: 0499834927">0499834927</a></p></li>
 				</ul>
 			</li>
@@ -72,6 +83,7 @@
 
 <footer class="footer is-fixed-bottom">
 	<div class="content has-text-centered">
+	  <img src="/assets/undraw_book_lover_mkck.svg" alt="" class="vectorial-image is-centered">
 	  <p><strong>By Giacomo R.</strong></p>
 	</div>
 </footer>
