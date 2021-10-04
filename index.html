@@ -6,12 +6,12 @@
 	<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Books, Heart and Brain",utcoffset:"2"}))};sessionStorage.setItem("_swa","1");</script>	<meta lang="IT-it">
 	<meta name="description" content="Il sito del gruppo di lettura dei ragazzi di Vigonovo (VE), 'Books, heart and brain'">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
 	<link rel="stylesheet" href="/bulmathemes/bulma.css">
 	<link rel="stylesheet" href="/newstyle.css">
 	<script src="/bulma-js.js"></script>
 	<title>Books, heart and brain</title>
 	<link rel="shortcut icon" href="assets/booksheartandbrain.ico"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
 </head>
 <header class="py-3">
 	<nav class="navbar" role="navigation" aria-label="main navigation">
@@ -30,28 +30,39 @@
 		<div class="navbar-menu" id="navMenu">
 			<div class="navbar-end">
 				<a href="/index.html" class="navbar-item">
+					<i class="fa fa-home" aria-hidden="true"></i>&nbsp;
 					Home
 				</a>
 		  
 				<a href="/pages/partecipa.html" class="navbar-item">
+					<i class="fa fa-users" aria-hidden="true"></i>&nbsp;
 					Partecipa
 				</a>
 	
 				<a href="/pages/eventi/eventi.html" class="navbar-item">
+					<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
 					Eventi
 				</a>
 		
 				<a href="/pages/ciaksilegge.html" class="navbar-item">
+					<i class="fa fa-film" aria-hidden="true"></i>&nbsp;
 					Ciak si legge
 				</a>
 		
 				<div class="navbar-item has-dropdown is-hoverable" tabindex="0">
 					<a class="navbar-link">
+						<i class="fa fa-book" aria-hidden="true"></i>&nbsp;
 					  Libri
 					</a>
 					<div class="navbar-dropdown is-right">
-					  <a class="navbar-item" href="/pages/libri/letti.html" tabindex="0">Libri letti</a>
-					  <a class="navbar-item" href="/pages/libri/consigli.html" tabindex="0">Libri con bollino</a>
+					  	<a class="navbar-item" href="/pages/libri/letti.html" tabindex="0">
+							<i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;
+							Libri letti
+						</a>
+					  	<a class="navbar-item" href="/pages/libri/consigli.html" tabindex="0">
+							<i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;
+							Libri con bollino
+						</a>
 					</div>
 				</div>
 		
