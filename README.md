@@ -4,4 +4,4 @@
 Questo è il codice sorgente del [sito del gruppo di lettura](https://booksheartbrain.netlify.app/) Books, heart and brain.
 
 
-<img src="assets/gif-logo.gif" width="250">
+<img src="assets/logo-completo.png" width="250">
