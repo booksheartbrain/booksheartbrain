@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="IT-it">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	
+	<meta charset="UTF-8">
+	<meta name="description" content="Il sito del gruppo di lettura dei ragazzi di Vigonovo (VE), 'Books, heart and brain'">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/bulmathemes/bulma.css">
+	<link rel="stylesheet" href="/newstyle.css">
+	<script src="/bulma-js.js"></script>
+	<title>Booktober - Books, heart and brain</title>
+	<link rel="shortcut icon" href="assets/booksheartandbrain.ico"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+	<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Books, Heart and Brain",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
+</head>
+<header class="py-3">
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+		  <a class="my-logo" href="/index.html">
+			<img alt="logo del gruppo" src="/assets/logo-completo.png" width="" height="">
+		  </a>
+	  
+		  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		  </a>
+		</div>
+		
+		<div class="navbar-menu" id="navMenu">
+			<div class="navbar-end">
+				<a href="/index.html" class="navbar-item">
+					<i class="fa fa-home" aria-hidden="true"></i>&nbsp;
+					Home
+				</a>
+		  
+				<a href="/pages/partecipa.html" class="navbar-item">
+					<i class="fa fa-users" aria-hidden="true"></i>&nbsp;
+					Partecipa
+				</a>
+	
+				<a href="/pages/eventi/eventi.html" class="navbar-item">
+					<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+					Eventi
+				</a>
+		
+				<a href="/pages/ciaksilegge.html" class="navbar-item">
+					<i class="fa fa-film" aria-hidden="true"></i>&nbsp;
+					Ciak si legge
+				</a>
+		
+				<div class="navbar-item has-dropdown is-hoverable" tabindex="0">
+					<a class="navbar-link">
+						<i class="fa fa-book" aria-hidden="true"></i>&nbsp;
+					  Libri
+					</a>
+					<div class="navbar-dropdown is-right">
+					  	<a class="navbar-item" href="/pages/libri/letti.html" tabindex="0">
+							<i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;
+							Libri letti
+						</a>
+					  	<a class="navbar-item" href="/pages/libri/consigli.html" tabindex="0">
+							<i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;
+							Libri con bollino
+						</a>
+					</div>
+				</div>
+		
+			</div>
+		</div>
+	</nav>
+</header>
+<body class="px-6 is-size-5">
+	<nav class="breadcrumb" aria-label="breadcrumbs">
+		<ul>
+		  <li><a href="/index.html">Home</a></li>
+		  <li><a href="#">Pagine</a></li>
+          <li><a href="/pages/eventi/eventi.html">Eventi</a></li>
+		  <li class="is-active"><a href="#" aria-current="page">Booktober</a></li>
+		</ul>
+	</nav>
+	<h2 class="is-size-2">Booktober</h2>
+	<p>Ogni giorno, dall’1 al 31 ottobre, su <a href="https://www.facebook.com/frizzifrizzi/" target="_blank">Frizzifrizzi</a>  viene lanciato un "tema del giorno", al quale il nostro Gruppo Lettura, risponde con un libro che, più o meno direttamente , rinvia a quel tema.<br>
+		Partecipiamo al booktober insieme alla Biblioteca e al Gruppo Lettura degli adulti LeggiAmo.
+		Lo scopo del booktober è quello di far girare un po’ di libri online, anziché soltanto brutte notizie!
+		</p>
+
+	<!--Immagini - Nascondere se non utilizzate-->
+
+	<div class="py-3 is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-around is-align-content-space-around">
+		<!--1-->
+		<div class="image-container">
+			<img src="/assets/booktober-img/1ott.webp">
+			<a href="#1-o">
+				<div class="image-caption caption-1">
+					<h2>1 Ottobre <br> Insetti</h2>
+				</div>
+			</a>
+		</div>
+		<!--2-->
+		<div class="image-container">
+			<img src="/assets/booktober-img/2ott.webp">
+			<a href="#2-o">
+				<div class="image-caption caption-1">
+					<h2>2 Ottobre <br> Giardino</h2>
+				</div>
+			</a>
+		</div>
+		<!--3-->
+		<div class="image-container">
+			<img src="/assets/booktober-img/3ott.webp">
+			<a href="#3-o">
+				<div class="image-caption caption-1">
+					<h2>3 Ottobre <br> Sasso</h2>
+				</div>
+			</a>
+		</div>
+		
+	</div>
+
+	<!--LIBRI CONSIGLIATI-->
+
+	<div id="1-o" class="section is-medium box hvr-glow">
+		<h2 class="is-size-2">Insetti</h2>
+		<p>Il libro che consigliamo che ha come tema "Insetti" per venerdì 1° Ottobre è <strong>"La febbre zombie"</strong> di Kristina Ohlsson</p>
+	</div>
+	<br>
+	<div id="2-o" class="section is-medium box hvr-glow">
+		<h2 class="is-size-2">Giardino</h2>
+		<p>Il libro che consigliamo che ha come tema "Giardino" per sabato 2 Ottobre è <strong>"Il giardino di mezzanotte"</strong> di Philippa Pearce</p>
+	</div>
+	<br>
+	<div id="not3-o" class="section is-medium box hvr-glow">
+		<h2 class="is-size-2">Sasso</h2>
+		<p>Il libro che consigliamo che ha come tema "Sasso" per domenica 3 Ottobre è <strong>"The Stone"</strong> di Guido Sgardoli</p>
+	</div>
+	<br><br><br><br>
+	<div id="uno" class="section is-medium box hvr-glow">
+		<h2 class="is-size-2"> {{ tema }} </h2>
+		<span>Il libro che consigliamo che ha come tema "{{ tema }}" per {{ giorno }} Ottobre è <strong>"{{ titolo }}"</strong> di {{ autore }}</span>
+	</div>
+	<div id="due" class="section is-medium box hvr-glow">
+		<h2 class="is-size-2"> {{ tema }} </h2>
+		<span>Il libro che consigliamo che ha come tema "{{ tema }}" per {{ giorno }} Ottobre è <strong>"{{ titolo }}"</strong> di {{ autore }}</span>
+	</div>
+	<div id="tre" class="section is-medium box hvr-glow">
+		<h2 class="is-size-2"> {{ tema }} </h2>
+		<span>Il libro che consigliamo che ha come tema "{{ tema }}" per {{ giorno }} Ottobre è <strong>"{{ titolo }}"</strong> di {{ autore }}</span>
+	</div>
+	<br><br><br><br>
+
+	<div id="listalibri">
+		<span v-for="tema in temi" v-for="giorno in giorni">
+			<div id="tre" class="section is-medium box hvr-glow">
+				<h2 class="is-size-2"> {{ tema }} </h2>
+				<span>Il libro che consigliamo che ha come tema <span v-for="tema in temi">"{{ tema }}"</span> per <span v-for="giorno in giorni">{{ giorno }}</span> Ottobre è <strong>"{{ titolo }}"</strong> di {{ autore }}</span>
+			</div>
+		</span>
+
+		<div v-if="showMovies">
+		  <h4>My favourite movies</h4>
+		  <ul>
+			<li v-for="movie in movies">{{ movie }}</li>
+		  </ul>
+		</div>
+		<div v-if="showBooks">
+		  <h4>My favourite books</h4>
+		  <ul>
+			<li v-for="book in books">{{ book }}</li>
+		  </ul>
+		</div>
+	</div>
+
+
+	<!--<div id="vue-app">
+		<div>
+		  <h4>My favourite movies</h4>
+		  <ul>
+			<li v-for="movie in movies">{{ movie }}</li>
+		  </ul>
+		</div>
+		<div>
+		  <h4>My favourite books</h4>
+		  <ul>
+			<li v-for="book in books">{{ book }}</li>
+		  </ul>
+		</div>
+	</div>-->
+	
+
+	<script src="/index.js"></script>
+</body>
+<footer class="footer is-fixed-bottom">
+	<div class="content has-text-centered">
+	  <img src="/assets/undraw_book_lover_mkck.svg" alt="" class="vectorial-image is-centered">
+	  <p><strong>By Giacomo R.</strong></p>
+	</div>
+</footer>
+
+</html>
