@@ -14,14 +14,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.contenitore{
-    text-align: center;
-}
-.centrato{
-    display: inline-block;
-}
-
-
 .vectorial-image {
     width: 250px;
     height: 250px;
@@ -77,4 +69,13 @@ html {
 .image-container:hover .caption-1 {
     left: 0;
     transition: all 0.5s;
+}
+
+/*FA*/
+
+.fa-discord {
+    color: rgb(114, 137, 218);
+}
+.fa-whatsapp {
+    color: rgb(0, 230, 118);
 }
