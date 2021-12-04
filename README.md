@@ -13,11 +13,18 @@ Questo è il codice sorgente del [sito del gruppo di lettura](https://booksheart
 
 Ecco le modifiche che pensiamo di fare a breve nel sito:
 
-- Modalità scura (modifica in corso);
-- Countdown per l'incontro successivo;
-- Risoluzione del bug in Firefox Mobile (Issue [#11](https://github.com/GicoProgram/booksheartbrain/issues/11), causato da Firefox e non dal sito), anche se è probabile la non risoluzione;
 - Miglioramenti nell'accessibilità;
 - Aggiunta avatar nelle parti scritte dai componenti del gruppo;
 - Aggiunta di nuovi consigli;
 
 [Scrivi nella discussione](https://github.com/GicoProgram/booksheartbrain/discussions/6) per proporre nuove modifiche, oppure [crea un'issue](https://github.com/GicoProgram/booksheartbrain/issues/new/choose) se trovi degli errori nel sito
+
+Modifiche già scritte qui ed effettuate:
+
+- Modalità scura (modifica in corso);
+- Countdown per l'incontro successivo;
+
+
+Problemi non risolti: 
+
+~~Risoluzione del bug in Firefox Mobile (Issue [#11](https://github.com/GicoProgram/booksheartbrain/issues/11), causato da Firefox e non dal sito), anche se è probabile la non risoluzione;~~
