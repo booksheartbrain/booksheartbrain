@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 var countDownDate = new Date("Dec 24, 2021 16:30:00").getTime();
 
 // Update the count down every 1 second
-var time = setInterval(function() {
+/*var time = setInterval(function() {
 	
 	// Get today's date and time
 	var now = new Date().getTime();
@@ -59,7 +59,8 @@ var time = setInterval(function() {
 		clearInterval(time);
 		document.getElementById("countdown").innerHTML = "Il gruppo di lettura si sta svolgendo";
 	}
-}, 1000);
+}, 1000);*/
+document.getElementById("countdown").innerHTML = "La data per quest'incontro non è ancora stata stabilita";
 
 // Thanks to w3schools!
 //COUNTDOWN 	^^^
