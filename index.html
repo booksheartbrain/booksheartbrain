@@ -1,130 +1,74 @@
 <!DOCTYPE html>
 <html lang="IT-it">
-<head>
-	<meta charset="UTF-8">
-	<meta name="msvalidate.01" content="C0619279F3AE4771922DE80C7A525691" />
-	<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Books, Heart and Brain",utcoffset:"2"}))};sessionStorage.setItem("_swa","1");</script>	<meta lang="IT-it">
-	<meta name="description" content="Il sito del gruppo di lettura dei ragazzi di Vigonovo (VE), 'Books, heart and brain'">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/bulmathemes/bulma.css">
-	<link rel="stylesheet" href="/newstyle.css">
-	<title>Books, heart and brain</title>
-	<link rel="shortcut icon" href="assets/booksheartandbrain.ico"/>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
-</head>
-<header class="py-3">
-	<nav class="navbar" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-		  	<a class="my-logo" href="/index.html">
-				<img alt="logo del gruppo" src="/assets/logo-completo.png" width="" height="">
-		  	</a>
-		  	<a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-		  	</a>
-		</div>
-		
-		<div class="navbar-menu" id="navMenu">
-			<div class="navbar-end">
-				<a href="/index.html" class="navbar-item">
-					<i class="fa fa-home" aria-hidden="true"></i>&nbsp;
-					Home
-				</a>
-		  
-				<a href="/pages/partecipa.html" class="navbar-item">
-					<i class="fa fa-users" aria-hidden="true"></i>&nbsp;
-					Partecipa
-				</a>
-	
-				<a href="/pages/eventi/eventi.html" class="navbar-item">
-					<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
-					Eventi
-				</a>
-		
-				<a href="/pages/ciaksilegge.html" class="navbar-item">
-					<i class="fa fa-film" aria-hidden="true"></i>&nbsp;
-					Ciak si legge
-				</a>
-		
-				<div class="navbar-item has-dropdown is-hoverable" tabindex="0">
-					<a class="navbar-link">
-						<i class="fa fa-book" aria-hidden="true"></i>&nbsp;
-					  	Libri
-					</a>
-					<div class="navbar-dropdown is-right">
-					  	<a class="navbar-item" href="/pages/libri/letti.html" tabindex="0">
-							<i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;
-							Il quaderno dei suggerimenti
-						</a>
-					  	<a class="navbar-item" href="/pages/libri/consigli.html" tabindex="0">
-							<i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;
-							Libri con bollino
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
-</header>
-<body class="px-6 is-size-5">
-	<nav class="breadcrumb" aria-label="breadcrumbs">
-		<ul>
-		  <li class="is-active"><a href="#" aria-current="page">Home</a></li>
-		</ul>
-	</nav>
-	<div class="columns">
-		<div class="column is-three-quarters">
-			<h1 class="title is-1">Home</h1>
-			<h2 class="subtitle is-3">Questo è il sito del gruppo lettura dei ragazzi di Vigonovo</h2>
-			<p>Nato nel novembre del 2019, è un'attività educativa e ricreativa rivolta a ragazzi dai 10 ai 14 anni.<br>
-				Condotto da un operatore della Biblioteca, nel gruppo vengono proposti e discussi libri di qualità per ragazzi.
-				Non si legge tutti lo stesso libro, ma ognuno sceglie, fra le proposte, quello che preferisce, e si è liberi anche di non scegliere.
-				Attualmente, l'attività adotta un protocollo di sicurezza per la prevenzione del contagio, ai sensi dell'allegato 8 del DPCM 24 ottobre 2020.</p>
-			<br>
-			<p>Il nome che abbiamo scelto per il nostro Gruppo Lettura - Books, Heart & Brain - rappresenta i diversi approcci che ciascuno di noi ha con la lettura.<br>
-				Abbiamo trovato l’ispirazione per il nome e per il nostro logo dall’opera di Nick Seluk, “Heart and brain”, pubblicato in Italia da Becco Giallo editore.
-				Il nostro logo è una fanart dei personaggi di Heart e Brain, realizzata da B., componente del nostro gruppo, il cui uso per il nostro G.L. è stato approvato sia da Nick Seluk, che dalla Becco Giallo.<br>
-				Per conoscere le opere di Nick Seluk, <a href="https://theawkwardyeti.com/" target="_blank">visita il suo sito</a></p>
-				<br>
-			<div class="box has-text-centered">
-				<p id="countdown"></p>
-			</div>
-		</div>
-		<br>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="msvalidate.01" content="C0619279F3AE4771922DE80C7A525691" />
+		<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Books, Heart and Brain",utcoffset:"2"}))};sessionStorage.setItem("_swa","1");</script>	<meta lang="IT-it">
+		<meta name="description" content="Il sito del gruppo di lettura dei ragazzi di Vigonovo (VE), 'Books, heart and brain'">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+		<link rel="stylesheet" href="/css/style.css">
+		<title>Books, heart and brain</title>
+		<link rel="shortcut icon" href="assets/booksheartandbrain.ico"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
+	</head>
 
-		<div class="column box pl-3 hvr-glow has-text-centered">
-			<div id="ev-in-corso">
-				<div>
-					<h2 class="is-size-2">Eventi in corso</h2>
-				</div>
-				<div>
-					<h3 class="is-size-3">Non sono presenti eventi in corso</h3>
-				</div>
+	<body class="px-6 is-size-5">
+		<div id="header"></div>
+		<nav class="breadcrumb" aria-label="breadcrumbs">
+			<ul>
+		  		<li class="is-active"><a href="#" aria-current="page">Home</a></li>
+			</ul>
+		</nav>
+		<div class="columns">
+			<div class="column is-three-quarters">
+				<h1 class="title is-1">Home</h1>
+				<h2 class="subtitle is-3">Questo è il sito del gruppo lettura dei ragazzi di Vigonovo</h2>
+				<p>Nato nel novembre del 2019, è un'attività educativa e ricreativa rivolta a ragazzi dai 10 ai 14 anni.<br>
+					Condotto da un operatore della Biblioteca, nel gruppo vengono proposti e discussi libri di qualità per ragazzi.
+					Non si legge tutti lo stesso libro, ma ognuno sceglie, fra le proposte, quello che preferisce, e si è liberi anche di non scegliere.
+					Attualmente, l'attività adotta un protocollo di sicurezza per la prevenzione del contagio, ai sensi dell'allegato 8 del DPCM 24 ottobre 2020.
+				</p>
 				<br>
+				<p>Il nome che abbiamo scelto per il nostro Gruppo Lettura - Books, Heart & Brain - rappresenta i diversi approcci che ciascuno di noi ha con la lettura.<br>
+					Abbiamo trovato l’ispirazione per il nome e per il nostro logo dall’opera di Nick Seluk, “Heart and brain”, pubblicato in Italia da Becco Giallo editore.
+					Il nostro logo è una fanart dei personaggi di Heart e Brain, realizzata da B., componente del nostro gruppo, il cui uso per il nostro G.L. è stato approvato sia da Nick Seluk, che dalla Becco Giallo.<br>
+					Per conoscere le opere di Nick Seluk, <a href="https://theawkwardyeti.com/" target="_blank">visita il suo sito</a>
+				</p>
+				<br>
+				<div class="box has-text-centered">
+					<p id="countdown"></p>
+				</div>
 			</div>
-			<div id="ev-finiti-da-poco">
-				<div>
-					<h2 class="is-size-2">Eventi finiti da poco:</h2>
+			<br>
+
+			<div class="column box pl-3 hvr-glow has-text-centered">
+				<div id="ev-in-corso">
+					<div>
+						<h2 class="is-size-2">Eventi in corso</h2>
+					</div>
+					<div>
+						<h3 class="is-size-3">Non sono presenti eventi in corso</h3>
+					</div>
+					<br>
 				</div>
-				<div>
-					<h3 class="is-size-3"><a href="/pages/eventi/2021/10/booktober.html">Booktober</a></h3>
-					<hr>
-					<h3 class="is-size-3"><a href="/pages/eventi/2021/11/parole-d-autore-rattaro.html">Parole d'autore - Sara Rattaro</a></h3>
+				<div id="ev-finiti-da-poco">
+					<div>
+						<h2 class="is-size-2">Eventi finiti da poco:</h2>
+					</div>
+					<div>
+						<h3 class="is-size-3"><a href="/pages/eventi/2021/10/booktober.html">Booktober</a></h3>
+						<hr>
+						<h3 class="is-size-3"><a href="/pages/eventi/2021/11/parole-d-autore-rattaro.html">Parole d'autore - Sara Rattaro</a></h3>
+					</div>
+					<br>
 				</div>
-				<br>
 			</div>
 		</div>
-	</div>
-	<div class="footer" id="footer"></div>
+		<div class="footer" id="footer"></div>
 	
-<script src="/index.js"></script>
-</body>
-<!--<footer class="footer is-fixed-bottom">
-	<div class="content has-text-centered">
-	  <img src="/assets/undraw_book_lover_mkck.svg" alt="" class="vectorial-image is-centered">
-	  <p>Sito creato da <a href="https://github.com/GicoProgram" target="_blank">Giacomo R.</a></p>
-	</div>
-</footer>-->
+		<script src="/script/index.js"></script>
+		<script src="/script/countdown.js"></script>
+	</body>
 </html>

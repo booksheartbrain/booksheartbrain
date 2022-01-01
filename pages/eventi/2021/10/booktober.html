@@ -1,534 +1,475 @@
 <!DOCTYPE html>
 <html lang="IT-it">
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Il sito del gruppo di lettura dei ragazzi di Vigonovo (VE), 'Books, heart and brain'">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/bulmathemes/bulma.css">
-	<link rel="stylesheet" href="/newstyle.css">
-	
-	<title>Booktober - Books, heart and brain</title>
-	<link rel="shortcut icon" href="assets/booksheartandbrain.ico"/>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-	<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Books, Heart and Brain",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
-</head>
-<header class="py-3">
-	<nav class="navbar" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-		  <a class="my-logo" href="/index.html">
-			<img alt="logo del gruppo" src="/assets/logo-completo.png" width="" height="">
-		  </a>
-	  
-		  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-		  </a>
-		</div>
-		
-		<div class="navbar-menu" id="navMenu">
-			<div class="navbar-end">
-				<a href="/index.html" class="navbar-item">
-					<i class="fa fa-home" aria-hidden="true"></i>&nbsp;
-					Home
-				</a>
-		  
-				<a href="/pages/partecipa.html" class="navbar-item">
-					<i class="fa fa-users" aria-hidden="true"></i>&nbsp;
-					Partecipa
-				</a>
-	
-				<a href="/pages/eventi/eventi.html" class="navbar-item">
-					<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
-					Eventi
-				</a>
-		
-				<a href="/pages/ciaksilegge.html" class="navbar-item">
-					<i class="fa fa-film" aria-hidden="true"></i>&nbsp;
-					Ciak si legge
-				</a>
-		
-				<div class="navbar-item has-dropdown is-hoverable" tabindex="0">
-					<a class="navbar-link">
-						<i class="fa fa-book" aria-hidden="true"></i>&nbsp;
-					  Libri
-					</a>
-					<div class="navbar-dropdown is-right">
-					  	<a class="navbar-item" href="/pages/libri/letti.html" tabindex="0">
-							<i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;
-							Libri letti
-						</a>
-					  	<a class="navbar-item" href="/pages/libri/consigli.html" tabindex="0">
-							<i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;
-							Libri con bollino
-						</a>
-					</div>
-				</div>
-		
-			</div>
-		</div>
-	</nav>
-</header>
-<body class="px-6 is-size-5">
-	<nav class="breadcrumb" aria-label="breadcrumbs">
-		<ul>
-		  <li><a href="/index.html">Home</a></li>
-		  <li><a href="#">Pagine</a></li>
-          <li><a href="/pages/eventi/eventi.html">Eventi</a></li>
-		  <li class="is-active"><a href="#" aria-current="page">Booktober</a></li>
-		</ul>
-	</nav>
-	<h2 class="is-size-2">Booktober</h2>
-	<p>Ogni giorno, dall’1 al 31 ottobre, su <a href="https://www.facebook.com/frizzifrizzi/" target="_blank">Frizzifrizzi</a>  viene lanciato un "tema del giorno", al quale il nostro Gruppo Lettura, risponde con un libro che, più o meno direttamente , rinvia a quel tema.<br>
-		Partecipiamo al booktober insieme alla Biblioteca e al Gruppo Lettura degli adulti LeggiAmo.
-		Lo scopo del booktober è quello di far girare un po’ di libri online, anziché soltanto brutte notizie!
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Il sito del gruppo di lettura dei ragazzi di Vigonovo (VE), 'Books, heart and brain'">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+		<link rel="stylesheet" href="/css/style.css">
+		<title>Booktober - Books, heart and brain</title>
+		<link rel="shortcut icon" href="assets/booksheartandbrain.ico"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+		<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Books, Heart and Brain",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
+		<link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
+	</head>
+	<body class="px-6 is-size-5">
+		<div id="header"></div>
+		<nav class="breadcrumb" aria-label="breadcrumbs">
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="#">Pagine</a></li>
+				<li><a href="/pages/eventi/eventi.html">Eventi</a></li>
+				<li class="is-active"><a href="#" aria-current="page">Booktober</a></li>
+			</ul>
+		</nav>
+		<h2 class="is-size-2">Booktober</h2>
+		<p>Ogni giorno, dall’1 al 31 ottobre, su <a href="https://www.facebook.com/frizzifrizzi/" target="_blank">Frizzifrizzi</a>  viene lanciato un "tema del giorno", al quale il nostro Gruppo Lettura, risponde con un libro che, più o meno direttamente , rinvia a quel tema.<br>
+			Partecipiamo al booktober insieme alla Biblioteca e al Gruppo Lettura degli adulti LeggiAmo.
+			Lo scopo del booktober è quello di far girare un po’ di libri online, anziché soltanto brutte notizie!
 		</p>
 
-	<!--Immagini - Nascondere se non utilizzate-->
+		<!--Immagini - Nascondere se non utilizzate-->
 
-	<div class="py-3 is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-around is-align-content-space-around">
-		<!--1-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/1ott.webp">
-			<a href="#1-o">
-				<div class="image-caption caption-1">
-					<h2>1 Ottobre <br> Insetti</h2>
-				</div>
-			</a>
+		<div class="py-3 is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-around is-align-content-space-around">
+			<!--1-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/1ott.webp">
+				<a href="#1-o">
+					<div class="image-caption caption-1">
+						<h2>1 Ottobre <br> Insetti</h2>
+					</div>
+				</a>
+			</div>
+			<!--2-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/2ott.webp">
+				<a href="#2-o">
+					<div class="image-caption caption-1">
+						<h2>2 Ottobre <br> Giardino</h2>
+					</div>
+				</a>
+			</div>
+			<!--3-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/3ott.webp">
+				<a href="#3-o">
+					<div class="image-caption caption-1">
+						<h2>3 Ottobre <br> Sasso</h2>
+					</div>
+				</a>
+			</div>
+			<!--4-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/4ott.webp">
+				<a href="#4-o">
+					<div class="image-caption caption-1">
+						<h2>4 Ottobre <br> Buco</h2>
+					</div>
+				</a>
+			</div>
+			<!--5-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/5ott.webp">
+				<a href="#5-o">
+					<div class="image-caption caption-1">
+						<h2>5 Ottobre <br> Pecora</h2>
+					</div>
+				</a>
+			</div>
+			<!--6-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/6ott.webp">
+				<a href="#6-o">
+					<div class="image-caption caption-1">
+						<h2>6 Ottobre <br> Perdersi</h2>
+					</div>
+				</a>
+			</div>
+			<!--7-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/7ott.webp">
+				<a href="#7-o">
+					<div class="image-caption caption-1">
+						<h2>7 Ottobre <br> Lupi</h2>
+					</div>
+				</a>
+			</div>
+			<!--8-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/8ott.webp">
+				<a href="#8-o">
+					<div class="image-caption caption-1">
+						<h2>8 Ottobre <br> Labirinto</h2>
+					</div>
+				</a>
+			</div>
+			<!--9-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/9ott.webp">
+				<a href="#9-o">
+					<div class="image-caption caption-1">
+						<h2>9 Ottobre <br> Memoria</h2>
+					</div>
+				</a>
+			</div>
+			<!--10-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/10ott.webp">
+				<a href="#10-o">
+					<div class="image-caption caption-1">
+						<h2>10 Ottobre <br> Nonno</h2>
+					</div>
+				</a>
+			</div>
+			<!--11-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/11ott.webp">
+				<a href="#11-o">
+					<div class="image-caption caption-1">
+						<h2>11 Ottobre <br> Cowboy</h2>
+					</div>
+				</a>
+			</div>
+			<!--12-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/12ott.webp">
+				<a href="#12-o">
+					<div class="image-caption caption-1">
+						<h2>12 Ottobre <br> Cavalli</h2>
+					</div>
+				</a>
+			</div>
+			<!--13-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/13ott.webp">
+				<a href="#13-o">
+					<div class="image-caption caption-1">
+						<h2>13 Ottobre <br> Elefante</h2>
+					</div>
+				</a>
+			</div>
+			<!--14-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/14ott.webp">
+				<a href="#14-o">
+					<div class="image-caption caption-1">
+						<h2>14 Ottobre <br> Luna</h2>
+					</div>
+				</a>
+			</div>
+			<!--15-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/15ott.webp">
+				<a href="#15-o">
+					<div class="image-caption caption-1">
+						<h2>15 Ottobre <br> Nonna</h2>
+					</div>
+				</a>
+			</div>
+			<!--16-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/16ott.webp">
+				<a href="#16-o">
+					<div class="image-caption caption-1">
+						<h2>16 Ottobre <br> Capelli Rossi</h2>
+					</div>
+				</a>
+			</div>
+			<!--17-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/17ott.webp">
+				<a href="#17-o">
+					<div class="image-caption caption-1">
+						<h2>17 Ottobre <br> T-rex</h2>
+					</div>
+				</a>
+			</div>
+			<!--18-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/18ott.webp">
+				<a href="#18-o">
+					<div class="image-caption caption-1">
+						<h2>18 Ottobre <br> Pinguino</h2>
+					</div>
+				</a>
+			</div>
+			<!--19-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/19ott.webp">
+				<a href="#19-o">
+					<div class="image-caption caption-1">
+						<h2>19 Ottobre <br> Al mare</h2>
+					</div>
+				</a>
+			</div>
+			<!--20-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/20ott.webp">
+				<a href="#20-o">
+					<div class="image-caption caption-1">
+						<h2>20 Ottobre <br> Uovo</h2>
+					</div>
+				</a>
+			</div>
+			<!--21-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/21ott.webp">
+				<a href="#21-o">
+					<div class="image-caption caption-1">
+						<h2>21 Ottobre <br> Verde</h2>
+					</div>
+				</a>
+			</div>
+			<!--22-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/22ott.webp">
+				<a href="#22-o">
+					<div class="image-caption caption-1">
+						<h2>22 Ottobre <br> Leone</h2>
+					</div>
+				</a>
+			</div>
+			<!--23-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/23ott.webp">
+				<a href="#23-o">
+					<div class="image-caption caption-1">
+						<h2>23 Ottobre <br> Soldatino</h2>
+					</div>
+				</a>
+			</div>
+			<!--24-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/24ott.webp">
+				<a href="#24-o">
+					<div class="image-caption caption-1">
+						<h2>24 Ottobre <br> Vento</h2>
+					</div>
+				</a>
+			</div>
+			<!--25-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/25ott.webp">
+				<a href="#25-o">
+					<div class="image-caption caption-1">
+						<h2>25 Ottobre <br> Pipistrello</h2>
+					</div>
+				</a>
+			</div>
+			<!--26-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/26ott.webp">
+				<a href="#26-o">
+					<div class="image-caption caption-1">
+						<h2>26 Ottobre <br> Nero</h2>
+					</div>
+				</a>
+			</div>
+			<!--27-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/27ott.webp">
+				<a href="#27-o">
+					<div class="image-caption caption-1">
+						<h2>27 Ottobre <br> Tamburo</h2>
+					</div>
+				</a>
+			</div>
+			<!--28-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/28ott.webp">
+				<a href="#28-o">
+					<div class="image-caption caption-1">
+						<h2>28 Ottobre <br> Palloncino</h2>
+					</div>
+				</a>
+			</div>
+			<!--29-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/29ott.webp">
+				<a href="#29-o">
+					<div class="image-caption caption-1">
+						<h2>29 Ottobre <br> Nuvole</h2>
+					</div>
+				</a>
+			</div>
+			<!--30-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/30ott.webp">
+				<a href="#30-o">
+					<div class="image-caption caption-1">
+						<h2>30 Ottobre <br> Pioggia</h2>
+					</div>
+				</a>
+			</div>
+			<!--31-->
+			<div class="image-container">
+				<img src="/assets/booktober-img/31ott.webp">
+				<a href="#31-o">
+					<div class="image-caption caption-1">
+						<h2>31 Ottobre <br> Scoiattolo</h2>
+					</div>
+				</a>
+			</div>
 		</div>
-		<!--2-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/2ott.webp">
-			<a href="#2-o">
-				<div class="image-caption caption-1">
-					<h2>2 Ottobre <br> Giardino</h2>
-				</div>
-			</a>
-		</div>
-		<!--3-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/3ott.webp">
-			<a href="#3-o">
-				<div class="image-caption caption-1">
-					<h2>3 Ottobre <br> Sasso</h2>
-				</div>
-			</a>
-		</div>
-		<!--4-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/4ott.webp">
-			<a href="#4-o">
-				<div class="image-caption caption-1">
-					<h2>4 Ottobre <br> Buco</h2>
-				</div>
-			</a>
-		</div>
-		<!--5-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/5ott.webp">
-			<a href="#5-o">
-				<div class="image-caption caption-1">
-					<h2>5 Ottobre <br> Pecora</h2>
-				</div>
-			</a>
-		</div>
-		<!--6-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/6ott.webp">
-			<a href="#6-o">
-				<div class="image-caption caption-1">
-					<h2>6 Ottobre <br> Perdersi</h2>
-				</div>
-			</a>
-		</div>
-		<!--7-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/7ott.webp">
-			<a href="#7-o">
-				<div class="image-caption caption-1">
-					<h2>7 Ottobre <br> Lupi</h2>
-				</div>
-			</a>
-		</div>
-		<!--8-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/8ott.webp">
-			<a href="#8-o">
-				<div class="image-caption caption-1">
-					<h2>8 Ottobre <br> Labirinto</h2>
-				</div>
-			</a>
-		</div>
-		<!--9-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/9ott.webp">
-			<a href="#9-o">
-				<div class="image-caption caption-1">
-					<h2>9 Ottobre <br> Memoria</h2>
-				</div>
-			</a>
-		</div>
-		<!--10-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/10ott.webp">
-			<a href="#10-o">
-				<div class="image-caption caption-1">
-					<h2>10 Ottobre <br> Nonno</h2>
-				</div>
-			</a>
-		</div>
-		<!--11-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/11ott.webp">
-			<a href="#11-o">
-				<div class="image-caption caption-1">
-					<h2>11 Ottobre <br> Cowboy</h2>
-				</div>
-			</a>
-		</div>
-		<!--12-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/12ott.webp">
-			<a href="#12-o">
-				<div class="image-caption caption-1">
-					<h2>12 Ottobre <br> Cavalli</h2>
-				</div>
-			</a>
-		</div>
-		<!--13-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/13ott.webp">
-			<a href="#13-o">
-				<div class="image-caption caption-1">
-					<h2>13 Ottobre <br> Elefante</h2>
-				</div>
-			</a>
-		</div>
-		<!--14-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/14ott.webp">
-			<a href="#14-o">
-				<div class="image-caption caption-1">
-					<h2>14 Ottobre <br> Luna</h2>
-				</div>
-			</a>
-		</div>
-		<!--15-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/15ott.webp">
-			<a href="#15-o">
-				<div class="image-caption caption-1">
-					<h2>15 Ottobre <br> Nonna</h2>
-				</div>
-			</a>
-		</div>
-		<!--16-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/16ott.webp">
-			<a href="#16-o">
-				<div class="image-caption caption-1">
-					<h2>16 Ottobre <br> Capelli Rossi</h2>
-				</div>
-			</a>
-		</div>
-		<!--17-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/17ott.webp">
-			<a href="#17-o">
-				<div class="image-caption caption-1">
-					<h2>17 Ottobre <br> T-rex</h2>
-				</div>
-			</a>
-		</div>
-		<!--18-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/18ott.webp">
-			<a href="#18-o">
-				<div class="image-caption caption-1">
-					<h2>18 Ottobre <br> Pinguino</h2>
-				</div>
-			</a>
-		</div>
-		<!--19-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/19ott.webp">
-			<a href="#19-o">
-				<div class="image-caption caption-1">
-					<h2>19 Ottobre <br> Al mare</h2>
-				</div>
-			</a>
-		</div>
-		<!--20-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/20ott.webp">
-			<a href="#20-o">
-				<div class="image-caption caption-1">
-					<h2>20 Ottobre <br> Uovo</h2>
-				</div>
-			</a>
-		</div>
-		<!--21-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/21ott.webp">
-			<a href="#21-o">
-				<div class="image-caption caption-1">
-					<h2>21 Ottobre <br> Verde</h2>
-				</div>
-			</a>
-		</div>
-		<!--22-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/22ott.webp">
-			<a href="#22-o">
-				<div class="image-caption caption-1">
-					<h2>22 Ottobre <br> Leone</h2>
-				</div>
-			</a>
-		</div>
-		<!--23-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/23ott.webp">
-			<a href="#23-o">
-				<div class="image-caption caption-1">
-					<h2>23 Ottobre <br> Soldatino</h2>
-				</div>
-			</a>
-		</div>
-		<!--24-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/24ott.webp">
-			<a href="#24-o">
-				<div class="image-caption caption-1">
-					<h2>24 Ottobre <br> Vento</h2>
-				</div>
-			</a>
-		</div>
-		<!--25-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/25ott.webp">
-			<a href="#25-o">
-				<div class="image-caption caption-1">
-					<h2>25 Ottobre <br> Pipistrello</h2>
-				</div>
-			</a>
-		</div>
-		<!--26-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/26ott.webp">
-			<a href="#26-o">
-				<div class="image-caption caption-1">
-					<h2>26 Ottobre <br> Nero</h2>
-				</div>
-			</a>
-		</div>
-		<!--27-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/27ott.webp">
-			<a href="#27-o">
-				<div class="image-caption caption-1">
-					<h2>27 Ottobre <br> Tamburo</h2>
-				</div>
-			</a>
-		</div>
-		<!--28-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/28ott.webp">
-			<a href="#28-o">
-				<div class="image-caption caption-1">
-					<h2>28 Ottobre <br> Palloncino</h2>
-				</div>
-			</a>
-		</div>
-		<!--29-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/29ott.webp">
-			<a href="#29-o">
-				<div class="image-caption caption-1">
-					<h2>29 Ottobre <br> Nuvole</h2>
-				</div>
-			</a>
-		</div>
-		<!--30-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/30ott.webp">
-			<a href="#30-o">
-				<div class="image-caption caption-1">
-					<h2>30 Ottobre <br> Pioggia</h2>
-				</div>
-			</a>
-		</div>
-		<!--31-->
-		<div class="image-container">
-			<img src="/assets/booktober-img/31ott.webp">
-			<a href="#31-o">
-				<div class="image-caption caption-1">
-					<h2>31 Ottobre <br> Scoiattolo</h2>
-				</div>
-			</a>
-		</div>
-	</div>
 
-	<!--LIBRI CONSIGLIATI-->
+		<!--LIBRI CONSIGLIATI-->
 
-	<div id="1-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Insetti</h2>
-		<p>Il libro che consigliamo che ha come tema "Insetti" per venerdì 1° Ottobre è <strong>"La febbre zombie"</strong> di Kristina Ohlsson</p>
-	</div>
-	<br>
-	<div id="2-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Giardino</h2>
-		<p>Il libro che consigliamo che ha come tema "Giardino" per sabato 2 Ottobre è <strong>"Il giardino di mezzanotte"</strong> di Philippa Pearce</p>
-	</div>
-	<br>
-	<div id="3-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Sasso</h2>
-		<p>Il libro che consigliamo che ha come tema "Sasso" per domenica 3 Ottobre è <strong>"The Stone"</strong> di Guido Sgardoli</p>
-	</div>
-	<br>
-	<div id="4-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Buco</h2>
-		<p>Il libro che consigliamo che ha come tema "Buco" per lunedì 4 Ottobre è <strong>"Orso, buco!"</strong> (libro illustrato) di Nicola Grossi</p>
-	</div>
-	<br>
-	<div id="5-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Pecora</h2>
-		<p>Il libro che consigliamo che ha come tema "Pecora" per martedì 5 Ottobre è <strong>"Factory"</strong> di Tim Bruno</p>
-	</div>
-	<br>
-	<div id="6-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Perdersi</h2>
-		<p>Il libro che consigliamo che ha come tema "Perdersi" per mercoledì 6 Ottobre è <strong>"La bambina che amava Tom Gordon"</strong> di Stephen King</p>
-	</div>
-	<br>
-	<div id="7-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Lupi</h2>
-		<p>Il libro che consigliamo che ha come tema "Lupi" per giovedì 7 Ottobre è <strong>"La ragazza dei lupi"</strong> di Katherine Rundell</p>
-	</div>
-	<br>
-	<div id="8-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Labirinto</h2>
-		<p>Il libro che consigliamo che ha come tema "Labirinto" per venerdì 8 Ottobre è <strong>"Il tesoro del labirinto incantato"</strong> di Elena Paccagnella e Nicoletta Bertelle</p>
-	</div>
-	<br>
-	<div id="9-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Memoria</h2>
-		<p>Il libro che consigliamo insieme al gruppo di lettura LeggiAmo che ha come tema "Memoria" per sabato 9 Ottobre è <strong>"Rughe"</strong> di Paco Roca</p>
-	</div>
-	<br>
-	<div id="10-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Nonno</h2>
-		<p>Il libro, consigliato dalla biblioteca, che ha come tema "Nonno" per domenica 10 Ottobre è <strong>"La grande fuga"</strong> di Ulf Stark</p>
-	</div>
-	<br>
-	<div id="11-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Cowboy</h2>
-		<p>Il libro, consigliato dalla biblioteca, che ha come tema "Cowboy" per lunedì 11 Ottobre è <strong>"Tommy River sulla via del Nord"</strong> di Mino Milani</p>
-	</div>
-	<br>
-	<div id="12-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Cavalli</h2>
-		<p>Il libro, consigliato dalla biblioteca, che ha come tema "Cavalli" per martedì 12 Ottobre è <strong>"Storie di cavalli"</strong> di Rolande Causse e Nane Vézinet </p>
-	</div>
-	<br>
-	<div id="13-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Elefante</h2>
-		<p>Il libro che consigliamo che ha come tema "Elefante" per mercoledì 13 Ottobre è <strong>"Pashmina"</strong> di Nidhi Chanani</p>
-	</div>
-	<br>
-	<div id="14-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Luna</h2>
-		<p>Il libro che consigliamo che ha come tema "Luna" per giovedì 14 Ottobre è <strong>"La straordinaria invenzione di Hugo Cabret"</strong> di Brian Selznick</p>
-	</div>
-	<br>
-	<div id="15-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Nonna</h2>
-		<p>Il libro che consigliamo che ha come tema "Nonna" per venerdì 15 Ottobre è <strong>"La nonna e le parole farfalla"</strong> di Francesca Mascheroni</p>
-	</div>
-	<br>
-	<div id="16-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Capelli Rossi</h2>
-		<p>Il libro, consigliato dalla biblioteca, che ha come tema "Capelli rossi" per sabato 16 Ottobre è <strong>"Van Gogh. L'autobiografia mai scritta"</strong> di Marco Goldin</p>
-	</div>
-	<br>
-	<div id="17-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">T-rex</h2>
-		<p>Il libro che ha come tema "T-rex" per domenica 17 Ottobre è <strong>"Rory il dinosauro e il suo papà"</strong> di Liz Climo, e anche <strong>"Costruisci il tuo T.Rex e scopri il mondo dei dinosauri"</strong> di Darren Naish</p>
-	</div>
-	<br>
-	<div id="18-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Pinguino</h2>
-		<p>Il libro che ha come tema "Pinguino" per lunedì 18 Ottobre è <strong>"Giù le mani! Il pinguino Leo impara a difendersi dagli adulti"</strong> di Giuseppe Maiolo, Katia Schneider e Giuliana Franchini </p>
-	</div>
-	<br>
-	<div id="19-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Al mare</h2>
-		<p>Il libro che ha come tema "Al mare" per martedì 19 Ottobre è <strong>"L'oceano quando non ci sei"</strong> di Mark Lowery</p>
-	</div>
-	<br>
-	<div id="20-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Uovo</h2>
-		<p>Il libro che ha come tema "Uovo" per mercoledì 20 Ottobre è <strong>"Fuori dal guscio"</strong> di Jerry Spinelli</p>
-	</div>
-	<br>
-	<div id="21-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Verde</h2>
-		<p>Il libro che ha come tema "Verde" per giovedì 21 Ottobre è <strong>"Timothy Top, libro uno: Verde cinghiale"</strong> di Gud</p>
-	</div>
-	<br>
-	<div id="22-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Leone</h2>
-		<p>Il libro che ha come tema "Leone" per venerdì 22 Ottobre è <strong>"Il leone e l'uccellino"</strong> di Marianne Dubuc</p>
-	</div>
-	<br>
-	<div id="23-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Soldatino</h2>
-		<p>Il libro che ha come tema "Soldatino" per sabato 23 Ottobre è <strong>"Il soldatino di piombo"</strong>, Casa Editrice Piccoli</p>
-	</div>
-	<br>
-	<div id="24-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Vento</h2>
-		<p>Il libro che ha come tema "Vento" per domenica 24 Ottobre è <strong>"Più veloce del vento"</strong> di Tommaso Percivale</p>
-	</div>
-	<br>
-	<div id="25-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Pipistrello</h2>
-		<p>Il libro che ha come tema "Pipistrello" per lunedì 25 Ottobre è <strong>"Gregor, la prima profezia"</strong> di Suzanne Collins</p>
-	</div>
-	<br>
-	<div id="26-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Nero</h2>
-		<p>Il libro che ha come tema "Nero" per martedì 26 Ottobre è <strong>"Pesce e gatto"</strong> di Joan Grant</p>
-	</div>
-	<br>
-	<div id="27-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Nero</h2>
-		<p>Il libro che ha come tema "Tamburo" per mercoledì 27 Ottobre è <strong>"Bim! Bum! Bam!, strumenti musicali fatti in casa"</strong> di Maria Signorelli</p>
-	</div>
-	<br>
-	<div id="28-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Palloncino</h2>
-		<p>Il libro che ha come tema "Palloncino" per giovedì 28 Ottobre è <strong>"Palloncini: come modellarli"</strong> di Jon Tremaine</p>
-	</div>
-	<br>
-	<div id="29-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Nuvole</h2>
-		<p>Il libro che ha come tema "Nuvole" per venerdì 29 Ottobre è <strong>"Tutta colpa delle nuvole"</strong> di Mario Sala Gallini</p>
-	</div>
-	<br>
-	<div id="30-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Pioggia</h2>
-		<p>Il libro che ha come tema "Pioggia" per sabato 30 Ottobre è <strong>"Non è colpa della pioggia"</strong> di Lynda Mullaly Hunt</p>
-	</div>
-	<br>
-	<div id="31-o" class="section is-medium box hvr-glow">
-		<h2 class="is-size-2">Scoiattolo</h2>
-		<p>Il libro che ha come tema "Scoiattolo" per domenica 31 Ottobre, ultimo giorno del Booktober 2021, è <strong>"Pamela lo scoiattolo"</strong> di Olivier Seigneur e Frederic Bosc</p>
-	</div>
-<div class="footer" id="footer"></div>
+		<div id="1-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Insetti</h2>
+			<p>Il libro che consigliamo che ha come tema "Insetti" per venerdì 1° Ottobre è <strong>"La febbre zombie"</strong> di Kristina Ohlsson</p>
+		</div>
+		<br>
+		<div id="2-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Giardino</h2>
+			<p>Il libro che consigliamo che ha come tema "Giardino" per sabato 2 Ottobre è <strong>"Il giardino di mezzanotte"</strong> di Philippa Pearce</p>
+		</div>
+		<br>
+		<div id="3-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Sasso</h2>
+			<p>Il libro che consigliamo che ha come tema "Sasso" per domenica 3 Ottobre è <strong>"The Stone"</strong> di Guido Sgardoli</p>
+		</div>
+		<br>
+		<div id="4-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Buco</h2>
+			<p>Il libro che consigliamo che ha come tema "Buco" per lunedì 4 Ottobre è <strong>"Orso, buco!"</strong> (libro illustrato) di Nicola Grossi</p>
+		</div>
+		<br>
+		<div id="5-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Pecora</h2>
+			<p>Il libro che consigliamo che ha come tema "Pecora" per martedì 5 Ottobre è <strong>"Factory"</strong> di Tim Bruno</p>
+		</div>
+		<br>
+		<div id="6-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Perdersi</h2>
+			<p>Il libro che consigliamo che ha come tema "Perdersi" per mercoledì 6 Ottobre è <strong>"La bambina che amava Tom Gordon"</strong> di Stephen King</p>
+		</div>
+		<br>
+		<div id="7-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Lupi</h2>
+			<p>Il libro che consigliamo che ha come tema "Lupi" per giovedì 7 Ottobre è <strong>"La ragazza dei lupi"</strong> di Katherine Rundell</p>
+		</div>
+		<br>
+		<div id="8-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Labirinto</h2>
+			<p>Il libro che consigliamo che ha come tema "Labirinto" per venerdì 8 Ottobre è <strong>"Il tesoro del labirinto incantato"</strong> di Elena Paccagnella e Nicoletta Bertelle</p>
+		</div>
+		<br>
+		<div id="9-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Memoria</h2>
+			<p>Il libro che consigliamo insieme al gruppo di lettura LeggiAmo che ha come tema "Memoria" per sabato 9 Ottobre è <strong>"Rughe"</strong> di Paco Roca</p>
+		</div>
+		<br>
+		<div id="10-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Nonno</h2>
+			<p>Il libro, consigliato dalla biblioteca, che ha come tema "Nonno" per domenica 10 Ottobre è <strong>"La grande fuga"</strong> di Ulf Stark</p>
+		</div>
+		<br>
+		<div id="11-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Cowboy</h2>
+			<p>Il libro, consigliato dalla biblioteca, che ha come tema "Cowboy" per lunedì 11 Ottobre è <strong>"Tommy River sulla via del Nord"</strong> di Mino Milani</p>
+		</div>
+		<br>
+		<div id="12-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Cavalli</h2>
+			<p>Il libro, consigliato dalla biblioteca, che ha come tema "Cavalli" per martedì 12 Ottobre è <strong>"Storie di cavalli"</strong> di Rolande Causse e Nane Vézinet </p>
+		</div>
+		<br>
+		<div id="13-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Elefante</h2>
+			<p>Il libro che consigliamo che ha come tema "Elefante" per mercoledì 13 Ottobre è <strong>"Pashmina"</strong> di Nidhi Chanani</p>
+		</div>
+		<br>
+		<div id="14-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Luna</h2>
+			<p>Il libro che consigliamo che ha come tema "Luna" per giovedì 14 Ottobre è <strong>"La straordinaria invenzione di Hugo Cabret"</strong> di Brian Selznick</p>
+		</div>
+		<br>
+		<div id="15-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Nonna</h2>
+			<p>Il libro che consigliamo che ha come tema "Nonna" per venerdì 15 Ottobre è <strong>"La nonna e le parole farfalla"</strong> di Francesca Mascheroni</p>
+		</div>
+		<br>
+		<div id="16-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Capelli Rossi</h2>
+			<p>Il libro, consigliato dalla biblioteca, che ha come tema "Capelli rossi" per sabato 16 Ottobre è <strong>"Van Gogh. L'autobiografia mai scritta"</strong> di Marco Goldin</p>
+		</div>
+		<br>
+		<div id="17-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">T-rex</h2>
+			<p>Il libro che ha come tema "T-rex" per domenica 17 Ottobre è <strong>"Rory il dinosauro e il suo papà"</strong> di Liz Climo, e anche <strong>"Costruisci il tuo T.Rex e scopri il mondo dei dinosauri"</strong> di Darren Naish</p>
+		</div>
+		<br>
+		<div id="18-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Pinguino</h2>
+			<p>Il libro che ha come tema "Pinguino" per lunedì 18 Ottobre è <strong>"Giù le mani! Il pinguino Leo impara a difendersi dagli adulti"</strong> di Giuseppe Maiolo, Katia Schneider e Giuliana Franchini </p>
+		</div>
+		<br>
+		<div id="19-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Al mare</h2>
+			<p>Il libro che ha come tema "Al mare" per martedì 19 Ottobre è <strong>"L'oceano quando non ci sei"</strong> di Mark Lowery</p>
+		</div>
+		<br>
+		<div id="20-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Uovo</h2>
+			<p>Il libro che ha come tema "Uovo" per mercoledì 20 Ottobre è <strong>"Fuori dal guscio"</strong> di Jerry Spinelli</p>
+		</div>
+		<br>
+		<div id="21-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Verde</h2>
+			<p>Il libro che ha come tema "Verde" per giovedì 21 Ottobre è <strong>"Timothy Top, libro uno: Verde cinghiale"</strong> di Gud</p>
+		</div>
+		<br>
+		<div id="22-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Leone</h2>
+			<p>Il libro che ha come tema "Leone" per venerdì 22 Ottobre è <strong>"Il leone e l'uccellino"</strong> di Marianne Dubuc</p>
+		</div>
+		<br>
+		<div id="23-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Soldatino</h2>
+			<p>Il libro che ha come tema "Soldatino" per sabato 23 Ottobre è <strong>"Il soldatino di piombo"</strong>, Casa Editrice Piccoli</p>
+		</div>
+		<br>
+		<div id="24-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Vento</h2>
+			<p>Il libro che ha come tema "Vento" per domenica 24 Ottobre è <strong>"Più veloce del vento"</strong> di Tommaso Percivale</p>
+		</div>
+		<br>
+		<div id="25-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Pipistrello</h2>
+			<p>Il libro che ha come tema "Pipistrello" per lunedì 25 Ottobre è <strong>"Gregor, la prima profezia"</strong> di Suzanne Collins</p>
+		</div>
+		<br>
+		<div id="26-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Nero</h2>
+			<p>Il libro che ha come tema "Nero" per martedì 26 Ottobre è <strong>"Pesce e gatto"</strong> di Joan Grant</p>
+		</div>
+		<br>
+		<div id="27-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Nero</h2>
+			<p>Il libro che ha come tema "Tamburo" per mercoledì 27 Ottobre è <strong>"Bim! Bum! Bam!, strumenti musicali fatti in casa"</strong> di Maria Signorelli</p>
+		</div>
+		<br>
+		<div id="28-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Palloncino</h2>
+			<p>Il libro che ha come tema "Palloncino" per giovedì 28 Ottobre è <strong>"Palloncini: come modellarli"</strong> di Jon Tremaine</p>
+		</div>
+		<br>
+		<div id="29-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Nuvole</h2>
+			<p>Il libro che ha come tema "Nuvole" per venerdì 29 Ottobre è <strong>"Tutta colpa delle nuvole"</strong> di Mario Sala Gallini</p>
+		</div>
+		<br>
+		<div id="30-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Pioggia</h2>
+			<p>Il libro che ha come tema "Pioggia" per sabato 30 Ottobre è <strong>"Non è colpa della pioggia"</strong> di Lynda Mullaly Hunt</p>
+		</div>
+		<br>
+		<div id="31-o" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Scoiattolo</h2>
+			<p>Il libro che ha come tema "Scoiattolo" per domenica 31 Ottobre, ultimo giorno del Booktober 2021, è <strong>"Pamela lo scoiattolo"</strong> di Olivier Seigneur e Frederic Bosc</p>
+		</div>
+		<div class="footer" id="footer"></div>
 
-<script src="/index.js"></script>
-</body>
-
-
+		<script src="/script/index.js"></script>
+	</body>
 </html>
