@@ -19,9 +19,9 @@ Ecco le modifiche che pensiamo di fare a breve nel sito:
 
 [Scrivi nella discussione](https://github.com/GicoProgram/booksheartbrain/discussions/6) per proporre nuove modifiche, oppure [crea un'issue](https://github.com/GicoProgram/booksheartbrain/issues/new/choose) se trovi degli errori nel sito
 
-Modifiche già scritte qui ed effettuate:
+Modifiche già effettuate:
 
-- Modalità scura (modifica in corso);
+- Modalità scura;
 - Countdown per l'incontro successivo;
 
 
