@@ -28,45 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // ---------------------------------------------------------------------------------------------------------------------------
 
 
-//COUNTDOWN 	|||
-//				VVV
-
-// Set the date we're counting down to
-var countDownDate = new Date("Dec 24, 2021 16:30:00").getTime();
-
-// Update the count down every 1 second
-/*var time = setInterval(function() {
-	
-	// Get today's date and time
-	var now = new Date().getTime();
-
-	// Find the distance between now and the count down date
-	var distance = countDownDate - now;
-
-	// Time calculations for days, hours, minutes and seconds
-	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	// var seconds = Math.floor((distance % (1000 * 60)) / 1000);   //INUTILIZZATO
-
-	// Display the result in the element with id="countdown"
-	document.getElementById("countdown").innerHTML = "Mancano " + days + " giorni, " + hours + " ore, e " + minutes + " minuti al prossimo gruppo di lettura<br>DATA PROVVISORIA";
-
-	//document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m ";
-
-	// If the count down is finished, write some text
-	if (distance < 0) {
-		clearInterval(time);
-		document.getElementById("countdown").innerHTML = "Il gruppo di lettura si sta svolgendo";
-	}
-}, 1000);*/
-document.getElementById("countdown").innerHTML = "La data per quest'incontro non è ancora stata stabilita";
-
-// Thanks to w3schools!
-//COUNTDOWN 	^^^
-//				|||
-
-// ---------------------------------------------------------------------------------------------------------------------------
 
 
 //FOOTER 		|||
@@ -75,3 +36,11 @@ document.getElementById("countdown").innerHTML = "La data per quest'incontro non
 var footer = '<div class="content has-text-centered"><img src="/assets/undraw_book_lover_mkck.svg" alt="" class="vectorial-image is-centered"><p>Sito creato da <a href="https://github.com/GicoProgram" target="_blank">Giacomo R.</a></p></div>';
 
 document.getElementById("footer").innerHTML = footer;
+
+
+
+
+//HEADER
+
+var header = '<header class="py-3"><nav class="navbar" role="navigation" aria-label="main navigation"><div class="navbar-brand"><a class="my-logo" href="/index.html"><img alt="logo del gruppo" src="/assets/logo-completo.png" width="" height=""></a><a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div><div class="navbar-menu" id="navMenu"><div class="navbar-end"><a href="/index.html" class="navbar-item"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a><a href="/pages/partecipa.html" class="navbar-item"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;Partecipa</a><a href="/pages/eventi/eventi.html" class="navbar-item"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Eventi</a><a href="/pages/ciaksilegge.html" class="navbar-item"><i class="fa fa-film" aria-hidden="true"></i>&nbsp;Ciak si legge</a><div class="navbar-item has-dropdown is-hoverable" tabindex="0"><a class="navbar-link"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Libri</a><div class="navbar-dropdown is-right"><a class="navbar-item" href="/pages/libri/letti.html" tabindex="0"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;Il quaderno dei suggerimenti</a><a class="navbar-item" href="/pages/libri/consigli.html" tabindex="0"><i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;Libri con bollino</a></div></div></div></div></nav></header>';
+document.getElementById("header").innerHTML = header;

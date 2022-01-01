@@ -1,410 +1,352 @@
 <!DOCTYPE html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="/assets/booksheartandbrain.ico" />
-	<link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-	<meta charset="UTF-8">
-	<title>Sezione libri - Books, heart and brain</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-    <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Books, Heart and Brain",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
-</head>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="/assets/booksheartandbrain.ico" />
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+		<meta charset="UTF-8">
+		<title>Sezione libri - Books, heart and brain</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+		<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Books, Heart and Brain",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
+		<link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
+	</head>
 
-<header class="py-3">
-	<nav class="navbar" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-		  <a class="my-logo" href="/index.html">
-			<img alt="logo del gruppo" src="/assets/logo-completo.png" width="" height="">
-		  </a>
-	  
-		  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-		  </a>
-		</div>
-		
-		<div class="navbar-menu" id="navMenu">
-			<div class="navbar-end">
-				<a href="/index.html" class="navbar-item">
-					<i class="fa fa-home" aria-hidden="true"></i>&nbsp;
-					Home
-				</a>
-		  
-				<a href="/pages/partecipa.html" class="navbar-item">
-					<i class="fa fa-users" aria-hidden="true"></i>&nbsp;
-					Partecipa
-				</a>
-	
-				<a href="/pages/eventi/eventi.html" class="navbar-item">
-					<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
-					Eventi
-				</a>
-		
-				<a href="/pages/ciaksilegge.html" class="navbar-item">
-					<i class="fa fa-film" aria-hidden="true"></i>&nbsp;
-					Ciak si legge
-				</a>
-		
-				<div class="navbar-item has-dropdown is-hoverable" tabindex="0">
-					<a class="navbar-link">
-						<i class="fa fa-book" aria-hidden="true"></i>&nbsp;
-					  Libri
-					</a>
-					<div class="navbar-dropdown is-right">
-					  	<a class="navbar-item" href="/pages/libri/letti.html" tabindex="0">
-							<i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;
-							Il quaderno dei suggerimenti
-						</a>
-					  	<a class="navbar-item" href="/pages/libri/consigli.html" tabindex="0">
-							<i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;
-							Libri con bollino
-						</a>
+	<body class="px-6 is-size-5">
+		<div id="header"></div>
+		<nav class="breadcrumb" aria-label="breadcrumbs">
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="#">Pagine</a></li>
+				<li><a href="#">Libri</a></li>
+				<li class="is-active"><a href="#" aria-current="page">Il quaderno dei suggerimenti</a></li>
+			</ul>
+		</nav>
+		<p>Abbiamo riempito questa pagina con i libri letti e condivisi da novembre 2019 ad oggi. Li abbiamo divisi per argomento lasciando da parte i generi e trovando delle categorie tutte nostre. Alcuni libri, lo vedrai, stanno dentro più di una categoria. <br>
+		Sono tutti libri letti dal almeno un componente del nostro gruppo: molti ci sono piaciuti, alcuni ci sono piaciuti tantissimo. Li trovi tutti in biblioteca o nella biblioteca digitale metropolitana (chiedi alla bibliotecaria).<br>
+		I migliori - secondo noi - hanno meritato il bollino, <a href="/pages/libri/consigli.html">e gli abbiamo dedicato una pagina nel sito</a>.
+		Speriamo che possano ispirarti!<br>
+		Per vedere il nome della categoria vai con il mouse sull'immagine, o, da telefono, clicca sull'immagine. Per vedere le bibliografie, clicca sul nome della categoria.<br>
+		Hai già letto uno di questi libri?
+		Vuoi suggerire una categoria che secondo te manca?
+		Vuoi semplicemente lasciarci un commento? 
+		<a href="mailto:booksheartandbrain@gmail.com?subject=Ecco un consiglio!&body=Il libro che vi consiglio è: ">Scrivici, cliccando qui</a>
+		</p>
+		<div class="py-3 is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-around is-align-content-space-around">
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Sei alla ricerca di avventure?">
+				<a href="#1-s">
+					<div class="image-caption caption-1">
+						<h2>Sei alla ricerca di avventure?</h2>
 					</div>
-				</div>
-		
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/categorie/2-r.jpeg" alt="Risolvi il mistero">
+				<a href="#2-r">
+					<div class="image-caption caption-1">
+						<h2>Risolvi il mistero!</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Cerchi un bel libro ma con poche pagine?">
+				<a href="#3-c">
+					<div class="image-caption caption-1">
+						<h2>Cerchi un bel libro ma con poche pagine?</h><br>
+						<p>(vedi anche 'Graphic novel imperdibili')</p>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Personaggi indimenticabili">
+				<a href="#4-p">
+					<div class="image-caption caption-1">
+						<h2>Personaggi indimenticabili</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Prepara i fazzoletti lacrime assicurate">
+				<a href="#5-f">
+					<div class="image-caption caption-1">
+						<h2>Prepara i fazzoletti</h2><br>
+						<p>(lacrime assicurate)</p>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/categorie/6-g.png" alt="Storie per diventare grandi">
+				<a href="#6-g">
+					<div class="image-caption caption-1">
+						<h2>Storie per diventare grandi</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Storie di paura ma non troppa">
+				<a href="#7-p">
+					<div class="image-caption caption-1">
+						<h2>Storie di paura</h2><br>
+						<p>(non troppa)</p>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Storie di persone estremamente incasinate">
+				<a href="#8-i">
+					<div class="image-caption caption-1">
+						<h2>Storie di persone estremamente incasinate</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Graphic novel imperdibili">
+				<a href="#9-gn">
+					<div class="image-caption caption-1">
+						<h2>Graphic novel imperdibili</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Libri lunghi ma ne vale la pena">
+				<a href="#10-l">
+					<div class="image-caption caption-1">
+						<h2>Libri lunghi</h2><br>
+						<p>(ma ne vale la pena!)</p>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Girl Power">
+				<a href="#11-grl">
+					<div class="image-caption caption-1">
+						<h2>Girl Power</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/categorie/12-rf.jpeg" alt="Quando la realtà incontra la fantasia">
+				<a href="#12-rf">
+					<div class="image-caption caption-1">
+						<h2>Quando la realtà incontra la fantasia</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="La Storia nelle storie">
+				<a href="#13-sns">
+					<div class="image-caption caption-1">
+						<h2>La Storia nelle storie</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Non la classica love story">
+				<a href="#14-ls">
+					<div class="image-caption caption-1">
+						<h2>Non la classica love story</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Animali fantastici">
+				<a href="#15-a">
+					<div class="image-caption caption-1">
+						<h2>Animali fantastici</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Amicizia">
+				<a href="#16-am">
+					<div class="image-caption caption-1">
+						<h2>Amicizia</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Famiglie sottosopra">
+				<a href="#17-fs">
+					<div class="image-caption caption-1">
+						<h2>Famiglie sottosopra</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Molla quel videogioco che tanto lo ritrovi dentro al libro">
+				<a href="#18-v">
+					<div class="image-caption caption-1">
+						<h2>Molla quel videogioco!</h2>
+						<p>Che tanto lo ritrovi dentro al libro</p>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/categorie/19-e.png" alt="Finalmente Estate!">
+				<a href="#19-e">
+					<div class="image-caption caption-1">
+						<h2>Finalmente Estate!</h2>
+					</div>
+				</a>
+			</div>
+			<div class="image-container">
+				<img src="/assets/booksheartandbrain.ico" alt="Storie arcolbaleno">
+				<a href="#20-sa">
+					<div class="image-caption caption-1">
+						<h2>Storie arcolbaleno</h2>
+					</div>
+				</a>
 			</div>
 		</div>
-	</nav>
-</header>
-<body class="px-6 is-size-5">
-    <nav class="breadcrumb" aria-label="breadcrumbs">
-		<ul>
-		  <li><a href="/index.html">Home</a></li>
-		  <li><a href="#">Pagine</a></li>
-          <li><a href="#">Libri</a></li>
-		  <li class="is-active"><a href="#" aria-current="page">Il quaderno dei suggerimenti</a></li>
-		</ul>
-	</nav>
-    <p>Abbiamo riempito questa pagina con i libri letti e condivisi da novembre 2019 ad oggi. Li abbiamo divisi per argomento lasciando da parte i generi e trovando delle categorie tutte nostre. Alcuni libri, lo vedrai, stanno dentro più di una categoria. <br>
-        Sono tutti libri letti dal almeno un componente del nostro gruppo: molti ci sono piaciuti, alcuni ci sono piaciuti tantissimo. Li trovi tutti in biblioteca o nella biblioteca digitale metropolitana (chiedi alla bibliotecaria).<br>
-        I migliori - secondo noi - hanno meritato il bollino, <a href="/pages/libri/consigli.html">e gli abbiamo dedicato una pagina nel sito</a>.
-        Speriamo che possano ispirarti!<br>
-        Per vedere il nome della categoria vai con il mouse sull'immagine, o, da telefono, clicca sull'immagine. Per vedere le bibliografie, clicca sul nome della categoria.<br>
-        <br>
-        Hai già letto uno di questi libri?
-        Vuoi suggerire una categoria che secondo te manca?
-        Vuoi semplicemente lasciarci un commento? 
-        <a href="mailto:booksheartandbrain@gmail.com?subject=Ecco un consiglio!&body=Il libro che vi consiglio è: ">Scrivici, cliccando qui</a>
-        </p>
-    <div class="py-3 is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-around is-align-content-space-around">
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Sei alla ricerca di avventure?">
-            <a href="#1-s">
-                <div class="image-caption caption-1">
-                    <h2>Sei alla ricerca di avventure?</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/categorie/2-r.jpeg" alt="Risolvi il mistero">
-            <a href="#2-r">
-                <div class="image-caption caption-1">
-                    <h2>Risolvi il mistero!</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Cerchi un bel libro ma con poche pagine?">
-            <a href="#3-c">
-                <div class="image-caption caption-1">
-                    <h2>Cerchi un bel libro ma con poche pagine?</h2><br>
-                    <p>(vedi anche 'Graphic novel imperdibili')</p>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Personaggi indimenticabili">
-            <a href="#4-p">
-                <div class="image-caption caption-1">
-                    <h2>Personaggi indimenticabili</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Prepara i fazzoletti lacrime assicurate">
-            <a href="#5-f">
-                <div class="image-caption caption-1">
-                    <h2>Prepara i fazzoletti</h2><br>
-                    <p>(lacrime assicurate)</p>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/categorie/6-g.png" alt="Storie per diventare grandi">
-            <a href="#6-g">
-                <div class="image-caption caption-1">
-                    <h2>Storie per diventare grandi</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Storie di paura ma non troppa">
-            <a href="#7-p">
-                <div class="image-caption caption-1">
-                    <h2>Storie di paura</h2><br>
-                    <p>(non troppa)</p>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Storie di persone estremamente incasinate">
-            <a href="#8-i">
-                <div class="image-caption caption-1">
-                    <h2>Storie di persone estremamente incasinate</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Graphic novel imperdibili">
-            <a href="#9-gn">
-                <div class="image-caption caption-1">
-                    <h2>Graphic novel imperdibili</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Libri lunghi ma ne vale la pena">
-            <a href="#10-l">
-                <div class="image-caption caption-1">
-                    <h2>Libri lunghi</h2><br>
-                    <p>(ma ne vale la pena!)</p>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Girl Power">
-            <a href="#11-grl">
-                <div class="image-caption caption-1">
-                    <h2>Girl Power</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/categorie/12-rf.jpeg" alt="Quando la realtà incontra la fantasia">
-            <a href="#12-rf">
-                <div class="image-caption caption-1">
-                    <h2>Quando la realtà incontra la fantasia</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="La Storia nelle storie">
-            <a href="#13-sns">
-                <div class="image-caption caption-1">
-                    <h2>La Storia nelle storie</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Non la classica love story">
-            <a href="#14-ls">
-                <div class="image-caption caption-1">
-                    <h2>Non la classica love story</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Animali fantastici">
-            <a href="#15-a">
-                <div class="image-caption caption-1">
-                    <h2>Animali fantastici</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Amicizia">
-            <a href="#16-am">
-                <div class="image-caption caption-1">
-                    <h2>Amicizia</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Famiglie sottosopra">
-            <a href="#17-fs">
-                <div class="image-caption caption-1">
-                    <h2>Famiglie sottosopra</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Molla quel videogioco che tanto lo ritrovi dentro al libro">
-            <a href="#18-v">
-                <div class="image-caption caption-1">
-                    <h2>Molla quel videogioco!</h2>
-                    <p>Che tanto lo ritrovi dentro al libro</p>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/categorie/19-e.png" alt="Finalmente Estate!">
-            <a href="#19-e">
-                <div class="image-caption caption-1">
-                    <h2>Finalmente Estate!</h2>
-                </div>
-            </a>
-        </div>
-        <div class="image-container">
-            <img src="/assets/booksheartandbrain.ico" alt="Storie arcolbaleno">
-            <a href="#20-sa">
-                <div class="image-caption caption-1">
-                    <h2>Storie arcolbaleno</h2>
-                </div>
-            </a>
-        </div>
-    </div>
 
-    <!--Da qui inizia la parte dei nomi dei libri-->
-    <div id="1-s" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Sei alla ricerca di avventure?</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<!--Da qui inizia la parte dei nomi dei libri-->
+		<div id="1-s" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Sei alla ricerca di avventure?</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="2-r" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Risolvi il mistero!</h1>
-            <p>La strana scomparsa del Sig. Goody - Nathalie Babbitt</p>
-            <p>Il gioco dell'assassino - Sandra Scoppettone</p>
-            <p>Sottovoce - Fulvia Degl'Innocenti</p>
-            <p>Il Corpo - Carol Ellis</p>
-            <p>Il mistero del London Eye - Siobhan Dowd</p>
-            <p>Il mistero del Guggenheim - Robin Stevens</p>
-            <p>Il fiammifero svedese e il segreto dell'amore - Philip Pullman</p>
-            <p>Delitto allo specchio - Tommaso Percivale</p>
-            <p>Il mastino di Baskerville - Arthur Conan doyle</p>
-            <p>Il rinomato catalogo Walker & Dawn - Davide Morosinotto</p>
-            <p>10 piccoli indiani - Aghata Christie</p>
-            <p>Il buio oltre la siepe - Harper Lee</p>
-            <p>Delitto allo specchio - Tommaso Percivale</p>
-    </div>
+		<div id="2-r" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Risolvi il mistero!</h1>
+				<p>La strana scomparsa del Sig. Goody - Nathalie Babbitt</p>
+				<p>Il gioco dell'assassino - Sandra Scoppettone</p>
+				<p>Sottovoce - Fulvia Degl'Innocenti</p>
+				<p>Il Corpo - Carol Ellis</p>
+				<p>Il mistero del London Eye - Siobhan Dowd</p>
+				<p>Il mistero del Guggenheim - Robin Stevens</p>
+				<p>Il fiammifero svedese e il segreto dell'amore - Philip Pullman</p>
+				<p>Delitto allo specchio - Tommaso Percivale</p>
+				<p>Il mastino di Baskerville - Arthur Conan doyle</p>
+				<p>Il rinomato catalogo Walker & Dawn - Davide Morosinotto</p>
+				<p>10 piccoli indiani - Aghata Christie</p>
+				<p>Il buio oltre la siepe - Harper Lee</p>
+				<p>Delitto allo specchio - Tommaso Percivale</p>
+		</div>
 
-    <div id="3-c" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Cerchi un bel libro ma con poche pagine? (vedi anche 'Graphic novel imperdibili')</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="3-c" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Cerchi un bel libro ma con poche pagine? (vedi anche 'Graphic novel imperdibili')</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="4-p" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Personaggi indimenticabili</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="4-p" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Personaggi indimenticabili</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="5-f" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Prepara i fazzoletti (lacrime assicurate)</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="5-f" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Prepara i fazzoletti (lacrime assicurate)</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="6-g" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Storie per diventare grandi</h1>
-            <p>L'anno in cui imparai a raccontare storie - Lauren Wolk</p>
-            <p>La ballata di Jordan e Lucie - Cristophe Léon</p>
-            <p>Una per i Murphy - Lynda Mullaly Hunt</p>
-            <p>La ballata del naso rotto - Arne Svingen</p>
-            <p>Il ragazzo che nuotava con i piranha - David Almond</p>
-            <p>Nodi al pettine - Marie-Aude Murail</p>
-            <p>Il figlio del cimitero - Neil Gaiman</p>
-            <p>Shhh. L'estate in cui cambia tutto</p>
-            <p>Sempre pronti - Vera Brosgol</p>
-            <p>L'estate in cui tutto cambiò - Penelope Lively</p>
-            <p> Aldobrando</p>
-    </div>
+		<div id="6-g" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Storie per diventare grandi</h1>
+				<p>L'anno in cui imparai a raccontare storie - Lauren Wolk</p>
+				<p>La ballata di Jordan e Lucie - Cristophe Léon</p>
+				<p>Una per i Murphy - Lynda Mullaly Hunt</p>
+				<p>La ballata del naso rotto - Arne Svingen</p>
+				<p>Il ragazzo che nuotava con i piranha - David Almond</p>
+				<p>Nodi al pettine - Marie-Aude Murail</p>
+				<p>Il figlio del cimitero - Neil Gaiman</p>
+				<p>Shhh. L'estate in cui cambia tutto</p>
+				<p>Sempre pronti - Vera Brosgol</p>
+				<p>L'estate in cui tutto cambiò - Penelope Lively</p>
+				<p>Aldobrando</p>
+		</div>
 
-    <div id="7-p" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Storie di paura (non troppa)</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="7-p" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Storie di paura (non troppa)</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="8-i" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Storie di persone estremamente incasinate</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="8-i" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Storie di persone estremamente incasinate</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="9-gn" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Graphic novel imperdibili</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="9-gn" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Graphic novel imperdibili</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="10-l" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Libri lunghi (ma ne vale la pena!)</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="10-l" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Libri lunghi (ma ne vale la pena!)</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="11-grl" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Girl Power</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="11-grl" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Girl Power</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="12-rf" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Quando la Realtà incontra la Fantasia</h1>
-        <p>Lucilla</p>
-        <p>Il ragazzo che nuotava con i piranha</p>
-        <p>La ragazza falco</p>
-        <p>Clara e le ombre</p>
-        <p>Il giardino di mezzanotte - Philippa Pearce</p>
-        <p>The stone - Guido Sgardoli</p>
-        <p>Uma del mondo di sotto - Marta Barone</p>
-        <p>Gregor</p>
-        <p>Nimona - Noelle Stevenson</p>
-        <p>L'intreccio dei mondi</p>
-        <p>Invisibile - Brenna Thummler</p>
-        <p>Bianco - Laura Bonalumi</p>
-        <p>Gli Inadottabili - Hana Tooke</p>
-        <p>Se la notte ha cuore - Matteo Corradini</p>
-    </div>
+		<div id="12-rf" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Quando la Realtà incontra la Fantasia</h1>
+				<p>Lucilla</p>
+				<p>Il ragazzo che nuotava con i piranha</p>
+				<p>La ragazza falco</p>
+				<p>Clara e le ombre</p>
+				<p>Il giardino di mezzanotte - Philippa Pearce</p>
+				<p>The stone - Guido Sgardoli</p>
+				<p>Uma del mondo di sotto - Marta Barone</p>
+				<p>Gregor</p>
+				<p>Nimona - Noelle Stevenson</p>
+				<p>L'intreccio dei mondi</p>
+				<p>Invisibile - Brenna Thummler</p>
+				<p>Bianco - Laura Bonalumi</p>
+				<p>Gli Inadottabili - Hana Tooke</p>
+				<p>Se la notte ha cuore - Matteo Corradini</p>
+		</div>
 
-    <div id="13-sns" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">La Storia nelle storie</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="13-sns" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">La Storia nelle storie</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="14-ls" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Non la classica love story</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="14-ls" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Non la classica love story</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="15-a" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Animali fantastici</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="15-a" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Animali fantastici</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="16-am" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Amicizia</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="16-am" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Amicizia</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="17-fs" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Famiglie sottosopra</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="17-fs" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Famiglie sottosopra</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="18-v" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Molla quel videogioco! Che tanto lo ritrovi dentro al libro</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="18-v" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Molla quel videogioco! Che tanto lo ritrovi dentro al libro</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
-    <div id="19-e" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Finalmente Estate!</h1>
-        <p>Non è colpa della pioggia - Lynda Mullaly Hunt</p>
-        <p>L'estate di Sunny - Jennyfer e Mattew Holm</p>
-        <p>L'oceano quando non ci sei - Mark Lowery</p>
-        <p>Tess e la settimana più folle della mia vita - Anna Woltz</p>
-        <p>Un attimo perfetto - Meg Rosoff</p>
-        <p>Shhh. L'estate in cui tutto cambia - Magnhild Winsnes</p>
-        <p>La mia estate con i Ruberson - Siri Kolu</p>
-        <p>L'estate in cui tutto cambiò - Penelope Lively (digitale)</p>
-        <p>Sempre pronti - Vera Brosgol</p>
-        <p>Se la notte ha cuore - Matteo Corradini</p>
-    </div>
+		<div id="19-e" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Finalmente Estate!</h1>
+				<p>Non è colpa della pioggia - Lynda Mullaly Hunt</p>
+				<p>L'estate di Sunny - Jennyfer e Mattew Holm</p>
+				<p>L'oceano quando non ci sei - Mark Lowery</p>
+				<p>Tess e la settimana più folle della mia vita - Anna Woltz</p>
+				<p>Un attimo perfetto - Meg Rosoff</p>
+				<p>Shhh. L'estate in cui tutto cambia - Magnhild Winsnes</p>
+				<p>La mia estate con i Ruberson - Siri Kolu</p>
+				<p>L'estate in cui tutto cambiò - Penelope Lively (digitale)</p>
+				<p>Sempre pronti - Vera Brosgol</p>
+				<p>Se la notte ha cuore - Matteo Corradini</p>
+		</div>
 
-    <div id="20-sa" class="section is-medium box hvr-glow">
-        <h2 class="is-size-2">Storie arcobaleno</h1>
-        <p>DA INSERIRE</p>
-    </div>
+		<div id="20-sa" class="section is-medium box hvr-glow">
+			<h2 class="is-size-2">Storie arcobaleno</h1>
+			<p>DA INSERIRE</p>
+		</div>
 
+		<div class="footer" id="footer"></div>
 
-
-<div class="footer" id="footer"></div>
-
-<script src="script/index.js"></script>
-</body>
-
+		<script src="/script/index.js"></script>
+	</body>
+</html>

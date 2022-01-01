@@ -1,316 +1,236 @@
 <!DOCTYPE html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="/assets/booksheartandbrain.ico" />
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/bulma.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-	<meta charset="UTF-8">
-	<title>Sezione libri - Books, heart and brain</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-	<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Books, Heart and Brain",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
-</head>
-<header class="py-3">
-	<nav class="navbar" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-		  <a class="my-logo" href="/index.html">
-			<img alt="logo del gruppo" src="/assets/logo-completo.png" width="" height="">
-		  </a>
-	  
-		  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-		  </a>
-		</div>
-		
-		<div class="navbar-menu" id="navMenu">
-			<div class="navbar-end">
-				<a href="/index.html" class="navbar-item">
-					<i class="fa fa-home" aria-hidden="true"></i>&nbsp;
-					Home
-				</a>
-		  
-				<a href="/pages/partecipa.html" class="navbar-item">
-					<i class="fa fa-users" aria-hidden="true"></i>&nbsp;
-					Partecipa
-				</a>
-	
-				<a href="/pages/eventi/eventi.html" class="navbar-item">
-					<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
-					Eventi
-				</a>
-		
-				<a href="/pages/ciaksilegge.html" class="navbar-item">
-					<i class="fa fa-film" aria-hidden="true"></i>&nbsp;
-					Ciak si legge
-				</a>
-		
-				<div class="navbar-item has-dropdown is-hoverable" tabindex="0">
-					<a class="navbar-link">
-						<i class="fa fa-book" aria-hidden="true"></i>&nbsp;
-					  Libri
-					</a>
-					<div class="navbar-dropdown is-right">
-					  	<a class="navbar-item" href="/pages/libri/letti.html" tabindex="0">
-							<i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;
-							Il quaderno dei suggerimenti
-						</a>
-					  	<a class="navbar-item" href="/pages/libri/consigli.html" tabindex="0">
-							<i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;
-							Libri con bollino
-						</a>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="/assets/booksheartandbrain.ico" />
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+		<meta charset="UTF-8">
+		<title>Sezione libri - Books, heart and brain</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+		<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Books, Heart and Brain",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
+		<link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
+	</head>
+
+	<body class="px-6 is-size-5">
+		<div id="header"></div>
+		<nav class="breadcrumb" aria-label="breadcrumbs">
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="#">Pagine</a></li>
+				<li><a href="#">Libri</a></li>
+				<li class="is-active"><a href="#" aria-current="page">Libri con bollino</a></li>
+			</ul>
+		</nav>
+		<section class="hero is-medium is-primary">
+			<div class="hero-body columns">
+				<div class="column">
+					<p class="title">Qui trovi i libri che consigliamo, con un piccolo testo</p>
+					<p class="subtitle">Puoi trovare questi libri nella biblioteca di Vigonovo, sono contrassegnati dal bollino che vedi qui vicino.</p>
+				</div class="column is-half-desktop is-one-third-mobile is-pulled-right is-96x96">
+					<img height="250" width="250" class="" src="/assets/raccomandato.jpg">
+				</div>
+			</div>
+		</section>
+
+
+		<div class="columns is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-around is-align-content-space-around is-8">
+
+			<!--il rinomato Catalogo Walker & Dawn-->
+			<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
+				<div class="card-content">
+					<div class="media">
+						<div class="media-left">
+							<img height="96" width="96" class="is-96x96" src="/assets/bollino/Rinomato Catalogo.jpg" alt="Copertina di Il Rinomato Catalogo Walker & Dawn">
+						</div>
+						<div class="media-content">
+							<p class="title is-4">Il Rinomato Catalogo Walker & Dawn</p>
+							<p class="subtitle is-6">di Davide Morosinotto</p>
+						</div>
+					</div>
+					<div class="content"><b>Perché è un libro da bollino?</b> Il Rinomato Catalogo Walker & Dawn è un libro da bollino per moltissimi motivi. Innanzitutto racconta di una bellissima amicizia, tra quattro ragazzi, che, nonostante, non possano essere più diversi, sono inseparabili.<br>
+						Inoltre, racconta di un’avventura incredibile: un viaggio dalla Louisiana con meta a Chicago, un orologio e un mistero da risolvere. 
+						Il Rinomato Catalogo Walker & Dawn ci fa capire che l’amicizia trionfa su tutto, che nulla è impossibile, anche se sei una ragazza, se sei nero e non parli e, persino, se vedi cose che gli altri non vedono.<br><br>
+						<time>Scritta il 10/08/2021</time>
 					</div>
 				</div>
-		
+			</div>
+
+			<!--Storiemigranti-->
+			<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
+				<div class="card-content">
+					<div class="media">
+						<div class="media-left">
+							<img height="96" width="96" class="is-96x96" src="/assets/bollino/storiemigranti.jpg">
+						</div>
+						<div class="media-content">
+							<p class="title is-4">Storiemigranti</p>
+							<p class="subtitle is-6">di Sio e Nicola Bernardi</p>
+						</div>
+					</div>
+					<div class="content"><b>Perché è un libro da bollino?</b> Storiemigranti è un libro da bollino perché riesce a fondere perfettamente un argomento serio con le risate.<br>
+						Immagino che a molte persone il nome di Sio non sia nuovo, che lo conosciate da YouTube per i suoi esilaranti video, oppure dai suoi simpatici Scottecs megazine, è molto probabile che l'abbiate già sentito, ma non credo che lo avreste mai associato a qualcosa di “serio”.<br>
+						O almeno è quello che io ho pensato leggendo Storiemigranti che però tratta un tema serio, spesso triste, ma riesce a strappare un sorriso.<br>
+						In collaborazione con il fotografo Nicola Bernardi, Sio racconta trentadue storie di persone con vite difficili che con un sorriso invitano a riflettere, perché ogni persona ha la sua storia indipendentemente da quello che sentiamo dire o vediamo in TV.<br><br>
+						B.
+						<br><br>
+						<time>Scritta il 9/10/2021</time>
+					</div>
+				</div>
+			</div>
+
+			<!--La sfolgorante luce di due stelle rosse-->
+			<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
+				<div class="card-content">
+					<div class="media">
+						<div class="media-left">
+							<img height="96" width="96" class="is-96x96" src="/assets/raccomandato.jpg" alt="">
+						</div>
+						<div class="media-content">
+							<p class="title is-4">La sfolgorante luce di due stelle rosse</p>
+							<p class="subtitle is-6">di Davide Morosinotto</p>
+						</div>
+					</div>
+					<div class="content"><b>Perché è un libro da bollino?</b> La sfolgorante luce di due stelle rosse è  semplicemente un capolavoro, come tutti i libri dell'autore d’altra parte.<br>
+						Ambientato nella Seconda Guerra Mondiale, a Leningrado, parla della storia di due gemelli costretti a scappare attraverso uno dei treni dei bambini.<br>
+						Per una sfortunata coincidenza vengono separati e da qui comincerà il viaggio più importante della loro vita. Ricco di personaggi e con una trama articolata e avvincente, è il libro perfetto per chi cerca avventura, emozioni e colpi di scena. Consigliatissimo.<br><br>
+						Ac.
+						<br><br>
+						<time>Scritta il 9/10/2021</time>
+					</div>
+				</div>
+			</div>
+
+			<!--Assenti senza giustificazione-->
+			<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
+				<div class="card-content">
+					<div class="media">
+						<div class="media-left">
+							<img height="96" width="96" class="is-96x96" src="/assets/bollino/Assenti senza giustificazione.jpg" alt="">
+						</div>
+						<div class="media-content">
+							<p class="title is-4">Assenti senza giustificazione</p>
+							<p class="subtitle is-6">di Rosario Esposito la Rossa</p>
+						</div>
+					</div>
+					<div class="content"><b>Perché è un libro da bollino?</b> “Assenti senza giustificazione” e un libro molto coinvolgente e di attualità che parla di alcune delle molte vittime di mafia in Italia, in particolare bambini , talmente tanti da formare un'intera classe scolastica con tanto di maestra!<br>
+						Le varie storie di questi bambini sono appassionanti , e la scrittura fluida.Lo raccomando poiché apre un mondo , a portata di ragazzi , sulla spietatezza della mafia.<br><br>
+						E.
+						<br><br>
+						<time>Scritta il 9/10/2021</time>
+					</div>
+				</div>
+			</div>
+
+			<!--Lucky Break-->
+			<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
+				<div class="card-content">
+					<div class="media">
+						<div class="media-left">
+							<img height="96" width="96" class="is-96x96" src="/assets/bollino/Lucky Break.jpg" alt="">
+						</div>
+						<div class="media-content">
+							<p class="title is-4">Lucky Break</p>
+							<p class="subtitle is-6">di Rob Stevens</p>
+						</div>
+					</div>
+					<div class="content"><b>Perché è un libro da bollino?</b> “Lucky Break” è un libro da bollino per la sua storia scorrevole e divertente, leggera anche se tratta il tema del lutto.<br>
+						Un racconto emozionante che parla di un’amicizia particolare e profonda, di una famiglia da aggiustare e dell’isolamento che la perdita di un familiare può provocare.<br><br>
+						M.
+						<br><br>
+						<time>Scritta il 9/10/2021</time>
+					</div>
+				</div>
+			</div>
+
+			<!--Reato di fuga-->
+			<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
+				<div class="card-content">
+					<div class="media">
+						<div class="media-left">
+							<img height="96" width="96" class="is-96x96" src="/assets/bollino/Reato di Fuga.jpg" alt="">
+						</div>
+						<div class="media-content">
+							<p class="title is-4">Reato di fuga</p>
+							<p class="subtitle is-6">di Christophe Léon</p>
+						</div>
+					</div>
+					<div class="content"><b>Perché è un libro da bollino?</b> Reato di fuga è un libro molto profondo e significativo.<br>
+						Parla delle storie di due ragazzi le quali si intrecciano in seguito ad un evento drammatico che cambierà le vite di entrambi. <br>
+						È una storia breve ma ricca di contenuto, capace di emozionare il lettore.<br><br>
+						Ac.
+						<br><br>
+						<time>Scritta il 9/10/2021</time>
+					</div>
+				</div>
+			</div>
+
+			<!--Bianco-->
+			<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
+				<div class="card-content">
+					<div class="media">
+						<div class="media-left">
+							<img height="96" width="96" class="is-96x96" src="/assets/bollino/Bianco.jpg" alt="">
+						</div>
+						<div class="media-content">
+							<p class="title is-4">Bianco</p>
+							<p class="subtitle is-6">di Laura Bonalumi</p>
+						</div>
+					</div>
+					<div class="content"><b>Perché è un libro da bollino?</b> “Bianco” è un libro che parla di una surrealtà non troppo lontana dalla nostra vita di tutti i giorni, in cui il mondo, a causa del cambiamento climatico, è stato ricoperto dalla neve e solo poche persone sono riuscite a sopravvivere.<br>
+						La storia è emozionante la scrittura non è molto scorrevole, ma dopo le prime pagine si prende senza problemi.<br><br>
+						E.
+						<br><br>
+						<time>Scritta il 9/10/2021</time>
+					</div>
+				</div>
+			</div>
+
+			<!--La più grande-->
+			<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
+				<div class="card-content">
+					<div class="media">
+						<div class="media-left">
+							<img height="96" width="96" class="is-96x96" src="/assets/bollino/La più grande.jpg" alt="">
+						</div>
+						<div class="media-content">
+							<p class="title is-4">La più grande</p>
+							<p class="subtitle is-6">di Davide Morosinotto</p>
+						</div>
+					</div>
+					<div class="content"><b>Perché è un libro da bollino?</b> “La più Grande” è un libro da bollino per la sua trama originale, per l’ambientazione suggestiva e per i personaggi memorabili, L’unica pecca è la storia non molto lineare, perché racconta solo alcuni avvenimenti della vita della protagonista, ma tutto sommato è un libro che sfiora la perfezione.<br>
+						Un racconto avvincente, molto consigliato per chi ama la Cina e le storie di pirati.<br><br>
+						M.
+						<br><br>
+						<time>Scritta il 9/10/2021</time>
+					</div>
+				</div>
+			</div>
+
+			<!--Cuori di carta-->
+			<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
+				<div class="card-content">
+					<div class="media">
+						<div class="media-left">
+							<img height="96" width="96" class="is-96x96" src="/assets/bollino/Cuori di Carta.jpg" alt="">
+						</div>
+						<div class="media-content">
+							<p class="title is-4">Cuori di carta</p>
+							<p class="subtitle is-6">di Elisa Puricelli Guerra</p>
+						</div>
+					</div>
+					<div class="content"><b>Perché è un libro da bollino?</b> Cuori di carta è un libro particolarmente bello. È un romanzo epistolare che racconta una storia d’amore diversa dal solito: due ragazzi che si scambiano biglietti, attraverso un libro nel posto sbagliato in biblioteca, in cui raccontano di loro.<br>
+						Pian piano verranno a galla dubbi e misteri riguardanti l’istituto in cui si trovano e sul perché loro si trovino in quel luogo. Pieno di bellissimi riferimenti ai classici della letteratura, Cuori di carta è una storia toccante, bellissima che racconta non solo di amore, ma anche di amicizie e dell’essere accettati.<br>
+						Tutti questi temi si intrecciano in una trama coinvolgente e poetica che non può che meritare il nostro bollino.<br><br>
+						B.
+						<br><br>
+						<time>Scritta il 9/10/2021</time>
+					</div>
+				</div>
 			</div>
 		</div>
-	</nav>
-</header>
-<body class="px-6 is-size-5">
-	<nav class="breadcrumb" aria-label="breadcrumbs">
-		<ul>
-		  <li><a href="/index.html">Home</a></li>
-		  <li><a href="#">Pagine</a></li>
-          <li><a href="#">Libri</a></li>
-		  <li class="is-active"><a href="#" aria-current="page">Libri con bollino</a></li>
-		</ul>
-	</nav>
-	<section class="hero is-medium is-primary">
-		<div class="hero-body columns">
-		<div class="column">
-			<p class="title">Qui trovi i libri che consigliamo, con un piccolo testo</p>
-		  	<p class="subtitle">Puoi trovare questi libri nella biblioteca di Vigonovo, sono contrassegnati dal bollino che vedi qui vicino.</p>
-			<br>
-		</div class="column is-half-desktop is-one-third-mobile is-pulled-right is-96x96">
-			<img height="250" width="250" class="" src="/assets/raccomandato.jpg">
-		</div>
-	</section>
+		<div class="footer" id="footer"></div>
 
-
-<div class="columns is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-around is-align-content-space-around is-8">
-
-	<!--il rinomato Catalogo Walker & Dawn-->
-
-	<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
-		<div class="card-content">
-		  	<div class="media">
-				<div class="media-left">
-					<img height="96" width="96" class="is-96x96" src="/assets/bollino/Rinomato Catalogo.jpg" alt="Copertina di Il Rinomato Catalogo Walker & Dawn">
-				</div>
-				<div class="media-content">
-			  		<p class="title is-4">Il Rinomato Catalogo Walker & Dawn</p>
-			  		<p class="subtitle is-6">di Davide Morosinotto</p>
-				</div>
-		  	</div>
-		  	<div class="content"><b>Perché è un libro da bollino?</b> Il Rinomato Catalogo Walker & Dawn è un libro da bollino per moltissimi motivi. Innanzitutto racconta di una bellissima amicizia, tra quattro ragazzi, che, nonostante, non possano essere più diversi, sono inseparabili.<br>
-				Inoltre, racconta di un’avventura incredibile: un viaggio dalla Louisiana con meta a Chicago, un orologio e un mistero da risolvere. 
-				Il Rinomato Catalogo Walker & Dawn ci fa capire che l’amicizia trionfa su tutto, che nulla è impossibile, anche se sei una ragazza, se sei nero e non parli e, persino, se vedi cose che gli altri non vedono.<br><br>
-				<time>Scritta il 10/08/2021</time>
-		  	</div>
-		</div>
-	</div>
-
-	<!--Storiemigranti-->
-
-	<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
-		<div class="card-content">
-		  	<div class="media">
-				<div class="media-left">
-					<img height="96" width="96" class="is-96x96" src="/assets/bollino/storiemigranti.jpg">
-				</div>
-				<div class="media-content">
-			  		<p class="title is-4">Storiemigranti</p>
-			  		<p class="subtitle is-6">di Sio e Nicola Bernardi</p>
-				</div>
-		  	</div>
-		  	<div class="content"><b>Perché è un libro da bollino?</b> Storiemigranti è un libro da bollino perché riesce a fondere perfettamente un argomento serio con le risate.<br>
-				  Immagino che a molte persone il nome di Sio non sia nuovo, che lo conosciate da YouTube per i suoi esilaranti video, oppure dai suoi simpatici Scottecs megazine, è molto probabile che l'abbiate già sentito, ma non credo che lo avreste mai associato a qualcosa di “serio”.<br>
-				  O almeno è quello che io ho pensato leggendo Storiemigranti che però tratta un tema serio, spesso triste, ma riesce a strappare un sorriso.<br>
-				  In collaborazione con il fotografo Nicola Bernardi, Sio racconta trentadue storie di persone con vite difficili che con un sorriso invitano a riflettere, perché ogni persona ha la sua storia indipendentemente da quello che sentiamo dire o vediamo in TV.<br><br>
-				  B.
-				<br><br>
-				<time>Scritta il 9/10/2021</time>
-		  	</div>
-		</div>
-	</div>
-
-	<!--La sfolgorante luce di due stelle rosse-->
-
-	<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
-		<div class="card-content">
-		  	<div class="media">
-				<div class="media-left">
-					<img height="96" width="96" class="is-96x96" src="/assets/raccomandato.jpg" alt="">
-				</div>
-				<div class="media-content">
-			  		<p class="title is-4">La sfolgorante luce di due stelle rosse</p>
-			  		<p class="subtitle is-6">di Davide Morosinotto</p>
-				</div>
-		  	</div>
-		  	<div class="content"><b>Perché è un libro da bollino?</b> La sfolgorante luce di due stelle rosse è  semplicemente un capolavoro, come tutti i libri dell'autore d’altra parte.<br>
-				Ambientato nella Seconda Guerra Mondiale, a Leningrado, parla della storia di due gemelli costretti a scappare attraverso uno dei treni dei bambini.<br>
-				Per una sfortunata coincidenza vengono separati e da qui comincerà il viaggio più importante della loro vita. Ricco di personaggi e con una trama articolata e avvincente, è il libro perfetto per chi cerca avventura, emozioni e colpi di scena. Consigliatissimo.<br><br>
-				Ac.
-				<br><br>
-				<time>Scritta il 9/10/2021</time>
-		  	</div>
-		</div>
-	</div>
-
-	<!--Assenti senza giustificazione-->
-	
-	<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
-		<div class="card-content">
-		  	<div class="media">
-				<div class="media-left">
-					<img height="96" width="96" class="is-96x96" src="/assets/bollino/Assenti senza giustificazione.jpg" alt="">
-				</div>
-				<div class="media-content">
-			  		<p class="title is-4">Assenti senza giustificazione</p>
-			  		<p class="subtitle is-6">di Rosario Esposito la Rossa</p>
-				</div>
-		  	</div>
-		  	<div class="content"><b>Perché è un libro da bollino?</b> “Assenti senza giustificazione” e un libro molto coinvolgente e di attualità che parla di alcune delle molte vittime di mafia in Italia, in particolare bambini , talmente tanti da formare un'intera classe scolastica con tanto di maestra!<br>
-				Le varie storie di questi bambini sono appassionanti , e la scrittura fluida.Lo raccomando poiché apre un mondo , a portata di ragazzi , sulla spietatezza della mafia.<br><br>
-				E.
-				<br><br>
-				<time>Scritta il 9/10/2021</time>
-		  	</div>
-		</div>
-	</div>
-
-	<!--Lucky Break-->
-
-	<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
-		<div class="card-content">
-		  	<div class="media">
-				<div class="media-left">
-					<img height="96" width="96" class="is-96x96" src="/assets/bollino/Lucky Break.jpg" alt="">
-				</div>
-				<div class="media-content">
-			  		<p class="title is-4">Lucky Break</p>
-			  		<p class="subtitle is-6">di Rob Stevens</p>
-				</div>
-		  	</div>
-		  	<div class="content"><b>Perché è un libro da bollino?</b> “Lucky Break” è un libro da bollino per la sua storia scorrevole e divertente, leggera anche se tratta il tema del lutto.<br>
-				Un racconto emozionante che parla di un’amicizia particolare e profonda, di una famiglia da aggiustare e dell’isolamento che la perdita di un familiare può provocare.<br><br>
-				M.
-				<br><br>
-				<time>Scritta il 9/10/2021</time>
-		  	</div>
-		</div>
-	</div>
-
-	<!--Reato di fuga-->
-
-	<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
-		<div class="card-content">
-		  	<div class="media">
-				<div class="media-left">
-					<img height="96" width="96" class="is-96x96" src="/assets/bollino/Reato di Fuga.jpg" alt="">
-				</div>
-				<div class="media-content">
-			  		<p class="title is-4">Reato di fuga</p>
-			  		<p class="subtitle is-6">di Christophe Léon</p>
-				</div>
-		  	</div>
-		  	<div class="content"><b>Perché è un libro da bollino?</b> Reato di fuga è un libro molto profondo e significativo.<br>
-				Parla delle storie di due ragazzi le quali si intrecciano in seguito ad un evento drammatico che cambierà le vite di entrambi. <br>
-				È una storia breve ma ricca di contenuto, capace di emozionare il lettore.<br><br>
-				Ac.
-				<br><br>
-				<time>Scritta il 9/10/2021</time>
-		  	</div>
-		</div>
-	</div>
-
-	<!--Bianco-->
-
-	<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
-		<div class="card-content">
-		  	<div class="media">
-				<div class="media-left">
-					<img height="96" width="96" class="is-96x96" src="/assets/bollino/Bianco.jpg" alt="">
-				</div>
-				<div class="media-content">
-			  		<p class="title is-4">Bianco</p>
-			  		<p class="subtitle is-6">di Laura Bonalumi</p>
-				</div>
-		  	</div>
-		  	<div class="content"><b>Perché è un libro da bollino?</b> “Bianco” è un libro che parla di una surrealtà non troppo lontana dalla nostra vita di tutti i giorni, in cui il mondo, a causa del cambiamento climatico, è stato ricoperto dalla neve e solo poche persone sono riuscite a sopravvivere.<br>
-				La storia è emozionante la scrittura non è molto scorrevole, ma dopo le prime pagine si prende senza problemi.<br><br>
-				E.
-				<br><br>
-				<time>Scritta il 9/10/2021</time>
-		  	</div>
-		</div>
-	</div>
-
-	<!--La più grande-->
-
-	<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
-		<div class="card-content">
-		  	<div class="media">
-				<div class="media-left">
-					<img height="96" width="96" class="is-96x96" src="/assets/bollino/La più grande.jpg" alt="">
-				</div>
-				<div class="media-content">
-			  		<p class="title is-4">La più grande</p>
-			  		<p class="subtitle is-6">di Davide Morosinotto</p>
-				</div>
-		  	</div>
-		  	<div class="content"><b>Perché è un libro da bollino?</b> “La più Grande” è un libro da bollino per la sua trama originale, per l’ambientazione suggestiva e per i personaggi memorabili, L’unica pecca è la storia non molto lineare, perché racconta solo alcuni avvenimenti della vita della protagonista, ma tutto sommato è un libro che sfiora la perfezione.<br>
-				Un racconto avvincente, molto consigliato per chi ama la Cina e le storie di pirati.<br><br>
-				M.
-				<br><br>
-				<time>Scritta il 9/10/2021</time>
-		  	</div>
-		</div>
-	</div>
-
-	<!--Cuori di carta-->
-
-	<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
-		<div class="card-content">
-		  	<div class="media">
-				<div class="media-left">
-					<img height="96" width="96" class="is-96x96" src="/assets/bollino/Cuori di Carta.jpg" alt="">
-				</div>
-				<div class="media-content">
-			  		<p class="title is-4">Cuori di carta</p>
-			  		<p class="subtitle is-6">di Elisa Puricelli Guerra</p>
-				</div>
-		  	</div>
-		  	<div class="content"><b>Perché è un libro da bollino?</b> Cuori di carta è un libro particolarmente bello. È un romanzo epistolare che racconta una storia d’amore diversa dal solito: due ragazzi che si scambiano biglietti, attraverso un libro nel posto sbagliato in biblioteca, in cui raccontano di loro.<br>
-				Pian piano verranno a galla dubbi e misteri riguardanti l’istituto in cui si trovano e sul perché loro si trovino in quel luogo. Pieno di bellissimi riferimenti ai classici della letteratura, Cuori di carta è una storia toccante, bellissima che racconta non solo di amore, ma anche di amicizie e dell’essere accettati.<br>
-				Tutti questi temi si intrecciano in una trama coinvolgente e poetica che non può che meritare il nostro bollino.<br><br>
-				B.
-				<br><br>
-				<time>Scritta il 9/10/2021</time>
-		  	</div>
-		</div>
-	</div>
-
-	<!--<div class="card column is-one-third-desktop is-full-mobile is-half-tablet">
-		<div class="card-content">
-		  	<div class="media">
-				<div class="media-left">
-					<img height="96" width="96" class="is-96x96" src="\assets\bollino\FILE" alt="Copertina di TITOLO">
-				</div>
-				<div class="media-content">
-			  		<p class="title is-4">TITOLO</p>
-			  		<p class="subtitle is-6">di NOME_COGNOME_AUTORE</p>
-				</div>
-		  	</div>
-		  	<div class="content">CONTENUTO<br><br>
-				<time>Scritta il DATA</time>
-		  	</div>
-		</div>
-	</div>-->
-</div>
-<div class="footer" id="footer"></div>
-
-<script src="script/index.js"></script>
-</body>
+		<script src="/script/index.js"></script>
+	</body>
+</html>
