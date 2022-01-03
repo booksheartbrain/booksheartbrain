@@ -3,10 +3,10 @@
 //				VVV
 
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 24, 2021 16:30:00").getTime();
+var countDownDate = new Date("Jan 28, 2022 16:30:00").getTime();
 
 // Update the count down every 1 second
-/*var time = setInterval(function() {
+var time = setInterval(function() {
 	
 	// Get today's date and time
 	var now = new Date().getTime();
@@ -21,7 +21,7 @@ var countDownDate = new Date("Dec 24, 2021 16:30:00").getTime();
 	// var seconds = Math.floor((distance % (1000 * 60)) / 1000);   //INUTILIZZATO
 
 	// Display the result in the element with id="countdown"
-	document.getElementById("countdown").innerHTML = "Mancano " + days + " giorni, " + hours + " ore, e " + minutes + " minuti al prossimo gruppo di lettura<br>DATA PROVVISORIA";
+	document.getElementById("countdown").innerHTML = "Mancano " + days + " giorni, " + hours + " ore, e " + minutes + " minuti al prossimo gruppo di lettura<br>La data potrebbe variare";
 
 	//document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m ";
 
@@ -30,8 +30,8 @@ var countDownDate = new Date("Dec 24, 2021 16:30:00").getTime();
 		clearInterval(time);
 		document.getElementById("countdown").innerHTML = "Il gruppo di lettura si sta svolgendo";
 	}
-}, 1000);*/
-document.getElementById("countdown").innerHTML = "La data per quest'incontro non è ancora stata stabilita";
+}, 1000);
+//document.getElementById("countdown").innerHTML = "La data per quest'incontro non è ancora stata stabilita";
 
 // Thanks to w3schools!
 //COUNTDOWN 	^^^
