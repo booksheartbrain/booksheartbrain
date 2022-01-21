@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //FOOTER 		|||
 //				VVV
 
-var footer = '<div class="content has-text-centered"><img src="/assets/undraw_book_lover_mkck.svg" alt="" class="vectorial-image is-centered"><p>Sito creato da <a href="https://github.com/GicoProgram" target="_blank">Giacomo R.</a></p></div>';
+var footer = '<div class="content has-text-centered"><img src="/assets/undraw_book_lover_mkck.svg" alt="" class="vectorial-image is-centered"><p>Sito creato da <a href="https://github.com/GicoProgram" target="_blank">Giacomo R.</a> nell\'organizzazione <a href="https://github.com/booksheartbrain" target="_blank">Books, Heart and Brain</a> </p></div>';
 
 document.getElementById("footer").innerHTML = footer;
 
