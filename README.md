@@ -6,7 +6,7 @@
 
 Questo è il codice sorgente del [sito del gruppo di lettura](https://booksheartbrain.netlify.app/) Books, heart and brain.
 
-[![Logo](assets/logo-completo.png)](assets/logo-completo.png)
+[![Logo](assets/booksheartandbrain.webp)](assets/booksheartandbrain.webp)
 
 
 # Roadmap
