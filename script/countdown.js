@@ -3,7 +3,7 @@
 //				VVV
 
 // Set the date we're counting down to
-var countDownDate = new Date("Mar 25, 2022 16:30:00").getTime();
+var countDownDate = new Date("May 28, 2022 16:30:00").getTime();
 
 // Update the count down every 1 second
 var time = setInterval(function() {
@@ -21,14 +21,17 @@ var time = setInterval(function() {
 	// var seconds = Math.floor((distance % (1000 * 60)) / 1000);   //INUTILIZZATO
 
 	// Display the result in the element with id="countdown"
-	document.getElementById("countdown").innerHTML = "Mancano " + days + " giorni, " + hours + " ore, e " + minutes + " minuti al prossimo gruppo di lettura<br>La data potrebbe variare";
+	document.getElementById("countdown").innerHTML = "Mancano " + days + " giorni, " + hours + " ore, e " + minutes + " minuti al prossimo gruppo di lettura<br>La data potrebbe variare, se vuoi partecipare ed essere sicuro della data e dell'ora, contattaci in uno dei modi scritti in <a href=\"/pages/partecipa.html\">Partecipa</a>";
 
 	//document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m ";
 
 	// If the count down is finished, write some text
-	if (distance < 0) {
+	if (distance < 0 && distance > -7500) {
 		clearInterval(time);
 		document.getElementById("countdown").innerHTML = "Il gruppo di lettura si sta svolgendo";
+	} else if (distance < 0) {
+		clearInterval(time);
+		document.getElementById("countdown").innerHTML = "Il countdown deve essere aggiornato. Se è passato troppo tempo, contatta l'amministratore del sito aprendo un'issue su github oppure manda una mail all'indirizzo presente su github";
 	}
 }, 1000);
 //document.getElementById("countdown").innerHTML = "La data per quest'incontro non è ancora stata stabilita";
