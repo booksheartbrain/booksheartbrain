@@ -3,7 +3,7 @@
 //				VVV
 
 // Set the date we're counting down to
-var countDownDate = new Date("May 28, 2022 16:30:00").getTime();
+var countDownDate = new Date("Jun 24, 2022 16:30:00").getTime();
 
 // Update the count down every 1 second
 var time = setInterval(function() {
