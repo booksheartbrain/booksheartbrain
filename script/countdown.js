@@ -1,4 +1,3 @@
-
 //COUNTDOWN 	|||
 //				VVV
 
@@ -21,7 +20,12 @@ var time = setInterval(function() {
 	// var seconds = Math.floor((distance % (1000 * 60)) / 1000);   //INUTILIZZATO
 
 	// Display the result in the element with id="countdown"
-	document.getElementById("countdown").innerHTML = "Mancano " + days + " giorni, " + hours + " ore, e " + minutes + " minuti al prossimo gruppo di lettura<br>La data potrebbe variare, se vuoi partecipare ed essere sicuro della data e dell'ora, contattaci in uno dei modi scritti in <a href=\"/pages/partecipa.html\">Partecipa</a>";
+	if(document.URL.includes("index")) {
+		document.getElementById("countdown").innerHTML = "Mancano " + days + " giorni, " + hours + " ore, e " + minutes + " minuti al prossimo gruppo di lettura<br>La data potrebbe variare, se vuoi partecipare ed essere sicuro della data e dell'ora, contattaci in uno dei modi scritti in <a href=\"/pages/partecipa.html\">Partecipa</a>";
+	} else if (document.URL.includes("partecipa")) {
+		document.getElementById("countdown-part").innerHTML = "Mancano " + days + " giorni, " + hours + " ore, e " + minutes + " minuti al prossimo gruppo di lettura<br>La data potrebbe variare, se vuoi partecipare ed essere sicuro della data e dell'ora, contattaci in uno dei modi scritti qui. Ci troviamo l'ultimo venerdì del mese, solitamente alle 4:30";
+	}
+	
 
 	//document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m ";
 

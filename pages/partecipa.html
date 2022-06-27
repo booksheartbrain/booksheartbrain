@@ -4,12 +4,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="/assets/booksheartandbrain.ico" />
 		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+		<link rel="stylesheet" href="/css/bulma.min.css">
 		<meta charset="UTF-8">
 		<title>Partecipa - Books, heart and brain</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+		<link rel="stylesheet" href="/assets/forkawesome/css/fork-awesome.min.css">
 		<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Books, Heart and Brain",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
-		<link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
+		<link rel="stylesheet" href="/css/bulmadark.css">
 	</head>
 
 	<body class="px-6 is-size-5">
@@ -21,40 +21,64 @@
 		  		<li class="is-active"><a href="#" aria-current="page">Partecipa</a></li>
 			</ul>
 		</nav>
+
+
 		<h2 class="title is-1">Vuoi partecipare al gruppo di lettura?</h2>
-		<div class="block is-size-5">Il gruppo si ritrova il pomeriggio (solitamente alle 4:30) dell'ultimo venerdì del mese in biblioteca. La partecipazione è gratuita.</div>
+		<div class="box has-text-centered">
+			<p id="countdown-part"></p>
+		</div>
 		
 		<div class="columns">
-			<div class="column is-half-desktop hvr-overline-reveal has-text-centered">
-				<h2 class="is-size-2"><i class="fa fa-discord" aria-hidden="true"></i><br>Discord:</h2>
+			<div class="column is-half-desktop hvr-overline-reveal-discord has-text-centered">
+				<h2 class="is-size-2">
+					<i class="fa fa-discord" aria-hidden="true"></i>
+					<p class="block">Discord</p>
+				</h2>
 				<h3 class="is-size-3"><a target="_blank" href="https://discord.gg/JJguV2FyTr">Entra nel nostro server</a></h3>
 			</div>
-			<div class="column is-half-desktop hvr-overline-reveal has-text-centered">
-				<h2 class="is-size-2"><i class="fa fa-whatsapp" aria-hidden="true"></i><br>Whatsapp:</h2>
+			<div class="column is-half-desktop hvr-overline-reveal-whatsapp has-text-centered">
+				<h2 class="is-size-2">
+					<i class="fa fa-whatsapp" aria-hidden="true"></i><br>
+					<p class="block">Whatsapp</p>
+				</h2>
 				<h3 class="is-size-3"><a target="_blank" href="https://chat.whatsapp.com/Dmj1oGZ1DIO4lRE6gtnoq2">Entra nel gruppo dei nuovi partecipanti</a></h3>
 			</div>
 		</div>
-		<div class="column">
+
+		<div class="columns">
 			<div class="column is-full-desktop has-text-centered">
 				<h4 class="is-size-4">oppure</h4>
 			</div>
 		</div>
+
 		<div class="columns">
 			<div class="column is-one-third-desktop hvr-overline-reveal has-text-centered">
-				<h2 class="is-size-2"><i class="fa fa-envelope" aria-hidden="true"></i><br>Manda una mail</h2>
-				<h3 class="is-size-3"><a href="mailto:booksheartandbrain@gmail.com"  target="_blank">Scrivici una mail</a>, oppure <a href="mailto:biblioteca@comune.vigonovo.ve.it" target="_blank">scrivi alla mail della biblioteca</a></h3>
+				<h2 class="is-size-2">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<p class="block">Scrivici una mail</p>
+				</h2>
+				<h3 class="is-size-3">
+					<p class="block"><a href="mailto:booksheartandbrain@gmail.com" target="_blank">Scrivi a noi</a></p><p><a href="mailto:biblioteca@comune.vigonovo.ve.it" target="_blank">Scrivi alla biblioteca</a></p></h3>
 			</div>
+
 			<div class="column is-one-third-desktop hvr-overline-reveal has-text-centered">
-				<h2 class="is-size-2"><i class="fa fa-phone" aria-hidden="true"></i><br>Chiamaci</h2>
+				<h2 class="is-size-2">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<p class="block">Chiamaci</p>
+				</h2>
 				<h3 class="is-size-3"><a href="tel:0499834927">Chiama la biblioteca</a></h3>
 			</div>
+
 			<div class="column is-one-third-desktop hvr-overline-reveal has-text-centered">
 				<h2 class="is-size-2"><i class="fa fa-bicycle" aria-hidden="true"></i><br><a href="https://goo.gl/maps/ktaziLdBiEkX8rC48" target="_blank">Vai in biblioteca</a></h2>
 				<h3 class="is-size-3">e chiedi alla bibliotecaria</h3>
 			</div>
 		</div>
+
+
 		<div class="footer" id="footer"></div>
 
 		<script src="/script/index.js"></script>
+		<script src="/script/countdown.js"></script>
 	</body>
 </html>
